@@ -46,6 +46,9 @@ public:
 
 		parameters.add(g);
 
+		ofParameter<bool> audio("Use Audio", true);
+		parameters.add(audio);
+
 		ofParameter<float> yScale("Y Scale", .2, .0, 10.0);
 		parameters.add(yScale);
 
@@ -57,6 +60,9 @@ public:
 
 		ofParameter<float> rotation("Rotation", 0.0, -180.0, 180.0);
 		parameters.add(rotation);
+
+		ofParameter<float> bell("Bell Curve Width", 5.0, 1.0f, 10.0f);
+		parameters.add(bell);
 		
 		ofParameter<ofFloatColor> planeColor("Color", ofFloatColor(.5, .5, .5));
 		parameters.add(planeColor);

@@ -5,7 +5,8 @@
         "sequenceFactories": [
             "Test",
             "Network",
-            "AudioWave"
+            "AudioWave",
+            "Rain"
         ],
         "slots": [
             {
@@ -24,6 +25,7 @@
                                     "Enable_Mask": "0",
                                     "Invert_Mask": "0"
                                 },
+                                "Label": "",
                                 "Transition": {
                                     "Easing": "Out Quad",
                                     "Time": "0"
@@ -55,6 +57,7 @@
                                 "Enable_Lines": "1",
                                 "Enable_Planes": "1",
                                 "Flash": "0",
+                                "Label": "",
                                 "Line_Color": "1, 1, 1, 1",
                                 "Plane_Color": "0.309322, 0.309322, 0.309322, 1",
                                 "Rotation": "0",
@@ -90,6 +93,7 @@
                                     "Enable_Mask": "0",
                                     "Invert_Mask": "0"
                                 },
+                                "Label": "",
                                 "Noise_Scale": "11.725",
                                 "Rotation": "90",
                                 "Speed": "4.41667",
@@ -101,6 +105,45 @@
                             }
                         },
                         "sequenceFactoryIndex": 2
+                    }
+                ],
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Enable_Lines": "0",
+                                "Enable_Planes": "0",
+                                "Flash": "0",
+                                "Label": "",
+                                "Line_Color": "1, 1, 1, 1",
+                                "Plane_Color": "0.5, 0.5, 0.5, 1",
+                                "Rotation": "0",
+                                "Speed": "1",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                },
+                                "Y_Scale": "0.2"
+                            }
+                        },
+                        "sequenceFactoryIndex": 3
                     }
                 ],
                 "name": ""

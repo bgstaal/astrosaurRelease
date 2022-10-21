@@ -5,7 +5,7 @@
 int main( )
 {
   ofGLFWWindowSettings s;
-  s.setSize(1400, 900);
+  s.setSize(1920, 1025);
   s.stencilBits = 8;
   
   auto win = ofCreateWindow(s);

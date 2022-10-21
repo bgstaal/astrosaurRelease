@@ -32,24 +32,24 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
@@ -100,9 +100,9 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;src\sequences;src\ui;src\utils;..\..\..\addons\ofxFFT\libs;..\..\..\addons\ofxFFT\src;..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidAudio\src;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -120,10 +120,10 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;src\sequences;src\ui;src\utils;..\..\..\addons\ofxFFT\libs;..\..\..\addons\ofxFFT\src;..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidAudio\src;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -140,10 +140,10 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;src\sequences;src\ui;src\utils;..\..\..\addons\ofxFFT\libs;..\..\..\addons\ofxFFT\src;..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidAudio\src;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
     <Link>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -163,9 +163,9 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;src\sequences;src\ui;src\utils;..\..\..\addons\ofxFFT\libs;..\..\..\addons\ofxFFT\src;..\..\..\addons\ofxTweenzor\src;..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxVoidCore\src;..\..\..\addons\ofxVoidCore\libs\tk\include;..\..\..\addons\ofxVoidUi\src;..\..\..\addons\ofxVoidUi\libs\gestureworks2\include;..\..\..\addons\ofxVoidAudio\src;..\..\..\addons\ofxVoidLaser\src;..\..\..\addons\ofxVoidSetList\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
     <Link>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -180,9 +180,18 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\LaserController.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\LaserController.cpp" />
+    <ClCompile Include="src\sequences\AudioWaveSequence.cpp" />
+    <ClCompile Include="src\sequences\NetworkSequence.cpp" />
+    <ClCompile Include="src\sequences\RainSequence.cpp" />
+    <ClCompile Include="src\sequences\TestSequence.cpp" />
+    <ClCompile Include="src\ui\Simulator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxFFT\src\ofxFFTBase.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxFFT\src\ofxFFTFile.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxFFT\src\ofxFFTLive.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxFFT\libs\fft.cpp" />
     <ClCompile Include="..\..\..\addons\ofxTweenzor\src\ofParameterTween.cpp" />
     <ClCompile Include="..\..\..\addons\ofxTweenzor\src\Tween.cpp" />
     <ClCompile Include="..\..\..\addons\ofxTweenzor\src\Tweenzor.cpp" />
@@ -207,10 +216,6 @@
     <ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Gradient.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\ParameterUtils.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\PolylineUtils.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\Laser.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserShape.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\Beyond.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\BeyondZone.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\gestureworks\GWWrapper.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Component.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\CursorOSX.mm" />
@@ -222,6 +227,7 @@
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\IconBar.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\IconButton.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\LoadingSpinner.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Pad.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Panel.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\PolylineEditor.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\RangeSlider.cpp" />
@@ -234,6 +240,10 @@
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TabLayout.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ui.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ValueLabel.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\Laser.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserShape.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\Beyond.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\BeyondZone.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateChildSequence.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateParentSequence.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateSequence.cpp" />
@@ -241,14 +251,20 @@
     <ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Set.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetList.cpp" />
     <ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetListView.cpp" />
-    <ClCompile Include="src\sequences\AudioWaveSequence.cpp" />
-    <ClCompile Include="src\sequences\NetworkSequence.cpp" />
-    <ClCompile Include="src\sequences\TestSequence.cpp" />
-    <ClCompile Include="src\ui\Simulator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\LaserController.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\LaserController.h" />
+    <ClInclude Include="src\sequences\AudioWaveSequence.h" />
+    <ClInclude Include="src\sequences\NetworkSequence.h" />
+    <ClInclude Include="src\sequences\RainSequence.h" />
+    <ClInclude Include="src\sequences\TestSequence.h" />
+    <ClInclude Include="src\ui\Simulator.h" />
+    <ClInclude Include="src\utils\Resources.h" />
+    <ClInclude Include="..\..\..\addons\ofxFFT\src\ofxFFTBase.h" />
+    <ClInclude Include="..\..\..\addons\ofxFFT\src\ofxFFTFile.h" />
+    <ClInclude Include="..\..\..\addons\ofxFFT\src\ofxFFTLive.h" />
+    <ClInclude Include="..\..\..\addons\ofxFFT\libs\fft.h" />
     <ClInclude Include="..\..\..\addons\ofxTweenzor\src\ofParameterTween.h" />
     <ClInclude Include="..\..\..\addons\ofxTweenzor\src\ofxTweenzor.h" />
     <ClInclude Include="..\..\..\addons\ofxTweenzor\src\Tween.h" />
@@ -291,11 +307,6 @@
     <ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\PolylineUtils.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\ProximityManager.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidCore\libs\tk\include\tkSpline.h" />
-    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\Laser.h" />
-    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserFrame.h" />
-    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserShape.h" />
-    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\Beyond.h" />
-    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\BeyondZone.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\gestureworks\GWWrapper.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\AllComponents.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Button.h" />
@@ -323,6 +334,7 @@
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\LabelButton.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\LoadingSpinner.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ModalPanel.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Pad.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Panel.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ParameterButton.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Plotter.h" />
@@ -350,6 +362,12 @@
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ValueLabel.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\VectorSlider.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidUi\libs\gestureworks2\include\GestureWorks2.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidAudio\src\ofxVoid\audio\AudioAnalyzer.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\Laser.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserFrame.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserShape.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\Beyond.h" />
+    <ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\BeyondZone.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Effect.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateChildSequence.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateParentSequence.h" />
@@ -358,11 +376,6 @@
     <ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Set.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetList.h" />
     <ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetListView.h" />
-    <ClInclude Include="src\sequences\AudioWaveSequence.h" />
-    <ClInclude Include="src\sequences\NetworkSequence.h" />
-    <ClInclude Include="src\sequences\TestSequence.h" />
-    <ClInclude Include="src\ui\Simulator.h" />
-    <ClInclude Include="src\utils\Resources.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

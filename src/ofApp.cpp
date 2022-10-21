@@ -3,6 +3,7 @@
 #include "ofxVoid/ui/ui.h"
 #include "sequences/NetworkSequence.h"
 #include "sequences/AudioWaveSequence.h"
+#include "sequences/RainSequence.h"
 
 #pragma mark - Public methods
 
@@ -23,12 +24,17 @@ void ofApp::setup()
   _laserController = make_shared<LaserController>();
   _laserController->setup(3000.0f);
 
+  _audioAnalyzer = make_shared<ofxVoid::audio::AudioAnalyzer>();
+  _audioAnalyzer->setup();
+
+  _resources->audioAnalyzer = _audioAnalyzer;
   _resources->laserController = _laserController;
   
   vector<shared_ptr<ofxVoid::setlist::SequenceFactoryAbstract>> factories;
   factories.push_back(make_shared<TestSequenceFactory>());
   factories.push_back(make_shared<NetworkSequenceFactory>());
   factories.push_back(make_shared<AudioWaveSequenceFactory>());
+  factories.push_back(make_shared<RainSequenceFactory>());
   
   // Add factories here
   
@@ -51,6 +57,8 @@ void ofApp::setup()
   auto rightPanel = ofxVoid::ui::Panel::create();
 
   rightPanel->addComponent(ofxVoid::ui::FpsLabel::create());
+  rightPanel->addComponent(ofxVoid::ui::Spacer::create());
+  rightPanel->addComponent(_audioAnalyzer);
   rightPanel->addComponent(ofxVoid::ui::Spacer::create());
 
   auto laserGroup = ofxVoid::ui::Group::create("Laser Settings", false);
@@ -86,6 +94,7 @@ void ofApp::update()
   Tweenzor::update(t * 1000);
 
   _laserController->update(t, d);
+  _audioAnalyzer->update();
   _setlist->update(t, d);
   _time = t;
 }
@@ -138,7 +147,8 @@ void ofApp::_loadSettings()
     ofJson json;
     file >> json;
     
-    // Deserialze here
+    ofDeserialize(json, _audioAnalyzer->parameters);
+    ofDeserialize(json, _laserController->parameters);
     
     ofLogNotice("ofApp") << "settings loaded";
   }
@@ -152,6 +162,9 @@ void ofApp::_loadSettings()
 void ofApp::_saveSettings()
 {
   ofJson json;
+
+  ofSerialize(json, _audioAnalyzer->parameters);
+  ofSerialize(json, _laserController->parameters);
   
   ofSaveJson("settings.json", json);
   ofLogNotice("ofApp") << "settings saved";

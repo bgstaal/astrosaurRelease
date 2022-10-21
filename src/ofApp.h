@@ -11,6 +11,8 @@
 #include "sequences/TestSequence.h"
 #include "LaserController.h"
 
+#include "ofxVoid/audio/AudioAnalyzer.h"
+
 
 class ofApp : public ofBaseApp
 {
@@ -35,6 +37,7 @@ private:
   shared_ptr<ofxVoid::setlist::SetList> _setlist;
   shared_ptr<LaserController> _laserController;
   shared_ptr<Resources> _resources;
+  shared_ptr<ofxVoid::audio::AudioAnalyzer> _audioAnalyzer;
   
   void _loadSettings();
   void _saveSettings();
