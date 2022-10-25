@@ -10,6 +10,10 @@ class NetworkSequence : public ofxVoid::setlist::Sequence<Resources>
 {
 	vector<glm::vec2> _points;
 	float _internalTime;
+	int _randomSeed;
+
+	void _setupPoints();
+	void _numLinesChangeHandler(int& numPoints);
 
 public:
 	void start(float time);
@@ -46,6 +50,12 @@ public:
 
 		parameters.add(g);
 
+
+		ofParameter<int> numLines("Num Lines", 10, 3, 50);
+		parameters.add(numLines);
+
+		ofParameter<int> randomSeed("Random Seed", 0, 0, 255);
+		parameters.add(randomSeed);
 
 		ofParameter<float> yScale("Y Scale", .2, .0, .5);
 		parameters.add(yScale);

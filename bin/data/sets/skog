@@ -1,0 +1,107 @@
+{
+    "set": {
+        "bpm": 0.0,
+        "name": "skog",
+        "sequenceFactories": [
+            "Test",
+            "Network",
+            "AudioWave",
+            "Rain"
+        ],
+        "slots": [
+            {
+                "duration": 30.0,
+                "entries": null,
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": [
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Enable_Lines": "0",
+                                "Enable_Planes": "1",
+                                "Flash": "1",
+                                "Label": "",
+                                "Line_Color": "1, 1, 1, 1",
+                                "Plane_Color": "0.309322, 0.309322, 0.309322, 1",
+                                "Rotation": "0",
+                                "Speed": "0.1875",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                },
+                                "Y_Scale": "0.05625"
+                            }
+                        },
+                        "sequenceFactoryIndex": 1
+                    }
+                ],
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": null,
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Color": "0.5, 0.5, 0.5, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "",
+                                "Max_Length": "0.1",
+                                "Max_Velocity": "0.5",
+                                "Min_Length": "0.03",
+                                "Min_Velocity": "0.1",
+                                "Noise_Line_Offset": "0.1",
+                                "Noise_Scale": "3",
+                                "Noise_Speed": "0.8",
+                                "Noise_Strength": "0.1",
+                                "Num_Lines": "12",
+                                "Rotation": "0",
+                                "Speed": "1",
+                                "Total_Width": "0.8",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                }
+                            }
+                        },
+                        "sequenceFactoryIndex": 3
+                    }
+                ],
+                "name": ""
+            }
+        ]
+    }
+}

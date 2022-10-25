@@ -73,7 +73,7 @@ void LaserController::setup(float height)
    }
   }, 0);
 
-  int num = 1;
+  int num = 2;
   float startX =  5000 * (num-1) * -.5;
   
   for (int i = 0; i < num; i++)

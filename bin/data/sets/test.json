@@ -11,30 +11,7 @@
         "slots": [
             {
                 "duration": 30.0,
-                "entries": [
-                    {
-                        "parameters": {
-                            "group": {
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "1"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "",
-                                "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "0"
-                                }
-                            }
-                        },
-                        "sequenceFactoryIndex": 0
-                    }
-                ],
+                "entries": null,
                 "name": ""
             },
             {
@@ -46,7 +23,8 @@
                             "group": {
                                 "Disable": "0",
                                 "Draw_to_laser": {
-                                    "Laser_0": "1"
+                                    "Laser_0": "1",
+                                    "Laser_1": "1"
                                 },
                                 "Effect": {
                                     "Blend_Mode": "Alpha",
@@ -54,19 +32,20 @@
                                     "Enable_Mask": "0",
                                     "Invert_Mask": "0"
                                 },
-                                "Enable_Lines": "1",
+                                "Enable_Lines": "0",
                                 "Enable_Planes": "1",
                                 "Flash": "0",
                                 "Label": "",
                                 "Line_Color": "1, 1, 1, 1",
-                                "Plane_Color": "0.309322, 0.309322, 0.309322, 1",
+                                "Num_Lines": "10",
+                                "Plane_Color": "1, 0.340348, 0.0677966, 1",
                                 "Rotation": "0",
                                 "Speed": "0.1875",
                                 "Transition": {
                                     "Easing": "Out Quad",
                                     "Time": "0"
                                 },
-                                "Y_Scale": "0.241667"
+                                "Y_Scale": "0.0614583"
                             }
                         },
                         "sequenceFactoryIndex": 1
@@ -76,76 +55,12 @@
             },
             {
                 "duration": 30.0,
-                "entries": [
-                    null,
-                    null,
-                    {
-                        "parameters": {
-                            "group": {
-                                "Color": "0.5, 0.5, 0.5, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "1"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "",
-                                "Noise_Scale": "11.725",
-                                "Rotation": "90",
-                                "Speed": "4.41667",
-                                "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "0"
-                                },
-                                "Y_Scale": "0.625"
-                            }
-                        },
-                        "sequenceFactoryIndex": 2
-                    }
-                ],
+                "entries": null,
                 "name": ""
             },
             {
                 "duration": 30.0,
-                "entries": [
-                    null,
-                    null,
-                    null,
-                    {
-                        "parameters": {
-                            "group": {
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "1"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Enable_Lines": "0",
-                                "Enable_Planes": "0",
-                                "Flash": "0",
-                                "Label": "",
-                                "Line_Color": "1, 1, 1, 1",
-                                "Plane_Color": "0.5, 0.5, 0.5, 1",
-                                "Rotation": "0",
-                                "Speed": "1",
-                                "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "0"
-                                },
-                                "Y_Scale": "0.2"
-                            }
-                        },
-                        "sequenceFactoryIndex": 3
-                    }
-                ],
+                "entries": null,
                 "name": ""
             }
         ]
