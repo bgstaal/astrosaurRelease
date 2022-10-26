@@ -31,23 +31,35 @@ void NetworkSequence::_setupPoints()
 	ofSeedRandom(_randomSeed);
 
 	_points.clear();
-	_onStates.resize(n, false);
+	_onStates.clear();
 
-	for (int i = 0; i < n - 1; i++)
+	int numProj = getResources()->laserController->getLasers().size();
+
+	for (int i = 0; i < numProj; i++)
 	{
-		glm::vec2 p(-0.5, 0.5);
+		deque<bool> s;
+		s.resize(n, false);
+		_onStates.push_back(s);
 
-		if (i > 0)
+		vector<glm::vec2> points;
+
+		for (int i = 0; i < n - 1; i++)
 		{
-			p.x = -0.5 + (i / (float)(n - 1));
-			p.x += ofRandom(-.5, .5) * (1.0 / (float)(n - 1));
-			p.y = .5;
+			glm::vec2 p(-0.5, 0.5);
+
+			if (i > 0)
+			{
+				p.x = -0.5 + (i / (float)(n - 1));
+				p.x += ofRandom(-.5, .5) * (1.0 / (float)(n - 1));
+				p.y = .5;
+			}
+
+			points.push_back(p);
 		}
 
-		_points.push_back(p);
+		points.push_back(glm::vec2(1.0, 0.5));
+		_points.push_back(points);
 	}
-
-	_points.push_back(glm::vec2(1.0, 0.5));
 }
 
 void NetworkSequence::stop()
@@ -60,17 +72,24 @@ void NetworkSequence::update(float time, float delta)
 {
 	Sequence::update(time, delta);
 	_internalTime += delta * getParameter<float>("Speed");
+	int numProj = getResources()->laserController->getLasers().size();
 
-	if (_points.size() != getParameter<int>("Num Lines") ||
+	if (_points[0].size() != getParameter<int>("Num Lines") ||
 		_randomSeed != getParameter<int>("Random Seed"))
 	{
 		_randomSeed = getParameter<int>("Random Seed");
 		_setupPoints();
 	}
 
-	for (auto& p : _points)
+	int i = 0;
+	for (auto& points : _points)
 	{
-		p.y = (ofSignedNoise((p.x * 20.0f) + _internalTime) * getParameter<float>("Y Scale"));
+		for (auto& p : points)
+		{
+			p.y = (ofSignedNoise((p.x * 20.0f) + _internalTime + (i * getParameter<float>("Projector Offset Value"))) * getParameter<float>("Y Scale"));
+		}
+
+		i++;
 	}
 
 	_timer += delta;
@@ -79,10 +98,16 @@ void NetworkSequence::update(float time, float delta)
 	{
 		_timer = 0.0f;
 
-		for (auto& s : _onStates)
+		for (int i = 0; i < numProj; i++)
 		{
-			s = ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha;
+			//ofSeedRandom(getParameter<int>("Random Seed"));
+
+			for (auto& s : _onStates[i])
+			{
+				s = ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha;
+			}
 		}
+		
 	}
 	//ofLog() << "eyah";
 }
@@ -116,21 +141,21 @@ void NetworkSequence::draw()
 
 			if (enablePlanes)
 			{
-				for (int i = 0; i < _points.size() - 1; i++)
+				for (int j = 0; j < _points[i].size() - 1; j++)
 				{
 					ofxVoid::laser::LaserShape s;
 					s.color = pColor;
 					s.position.x = 0.5;
 					s.position.y = 0.5;
 
-					s.path.moveTo(_points[i]);
-					s.path.lineTo(_points[i + 1]);
+					s.path.moveTo(_points[i][j]);
+					s.path.lineTo(_points[i][j + 1]);
 
 					s.rotation = rot;
 
 					//l->addShapeToCurrentFrame(s);
 
-					if (!getParameter<bool>("Flash Planes") || _onStates[i]) l->addShapeToCurrentFrame(s);
+					if (!getParameter<bool>("Flash Planes") || _onStates[i][j]) l->addShapeToCurrentFrame(s);
 
 					//if (ofRandom(1.0) > .5 || !flash) l->addShapeToCurrentFrame(s);
 				}
@@ -138,9 +163,9 @@ void NetworkSequence::draw()
 
 			if (enableLines)
 			{
-				int i = 0;
+				int j = 0;
 
-				for (auto& p : _points)
+				for (auto& p : _points[i])
 				{
 					ofxVoid::laser::LaserShape s;
 					s.color = lColor;
@@ -153,8 +178,8 @@ void NetworkSequence::draw()
 
 					//l->addShapeToCurrentFrame(s);
 					//if (ofRandom(1.0) > .5 || !flash) l->addShapeToCurrentFrame(s);
-					if (!getParameter<bool>("Flash Lines") || _onStates[i]) l->addShapeToCurrentFrame(s);
-					i++;
+					if (!getParameter<bool>("Flash Lines") || _onStates[i][j]) l->addShapeToCurrentFrame(s);
+					j++;
 				}
 			}
 		}

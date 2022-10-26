@@ -8,8 +8,8 @@
 
 class NetworkSequence : public ofxVoid::setlist::Sequence<Resources>
 {
-	vector<glm::vec2> _points;
-	deque<bool> _onStates;
+	vector<vector<glm::vec2>> _points;
+	vector<deque<bool>> _onStates;
 	float _internalTime;
 	float _timer;
 	int _randomSeed;

@@ -24,7 +24,9 @@
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
-                                    "Laser_1": "1"
+                                    "Laser_1": "1",
+                                    "Laser_2": "1",
+                                    "Laser_3": "1"
                                 },
                                 "Effect": {
                                     "Blend_Mode": "Alpha",
@@ -36,7 +38,6 @@
                                 "Enable_Planes": "1",
                                 "Fade_In_Alpha": "0",
                                 "Flash_Frequency": "0.0326875",
-                                "Flash_In_Sequence": "0",
                                 "Flash_Lines": "0",
                                 "Flash_Planes": "1",
                                 "Flash_Probability": "0.939583",
@@ -44,6 +45,7 @@
                                 "Line_Color": "1, 1, 1, 1",
                                 "Num_Lines": "14",
                                 "Plane_Color": "1, 0.340348, 0.0677966, 1",
+                                "Projector_Offset_Value": "6.58333",
                                 "Random_Seed": "0",
                                 "Rotation": "0",
                                 "Speed": "0.1875",
