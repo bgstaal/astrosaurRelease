@@ -73,25 +73,33 @@ void AudioWaveSequence::update(float time, float delta)
 
 	for (auto& p : _points)
 	{
+		float x = p.x;
+		x = ofMap(x, getParameter<float>("X From"), getParameter<float>("X To"), 0.0f, 1.0f);
+
 		if (audio)
 		{
-			int index = ofMap(p.x, -.5, .5, 0, peaks.size(), true);
+			int index = ofMap(x, -.5, .5, 0, peaks.size(), true);
 			float val = peaks[index];
 
 			p.y = ofClamp(val * yScale * 0.5, 0.0, 1.0);
 		}
 		else
 		{
-			p.y = (ofSignedNoise((p.x * getParameter<float>("Noise Scale")) + _internalTime, 5.0f) * getParameter<float>("Y Scale"));
-			p.y *= (ofSignedNoise((p.x * getParameter<float>("Noise Scale") * .1) + _internalTime, 5.0f) * getParameter<float>("Y Scale"));
+			p.y = (ofSignedNoise((x * getParameter<float>("Noise Scale")) + _internalTime, 5.0f) * getParameter<float>("Y Scale"));
+			p.y *= (ofSignedNoise((x * getParameter<float>("Noise Scale") * .1) + _internalTime, 5.0f) * getParameter<float>("Y Scale"));
 			float sign = 1.0f;
 			if (p.y < 0) sign = -1.0f;
 			//p.y = powf(p.y, 2.0f) * 2.0f * sign;
 		}
 
 		//TODO: choose range on line where the distortion should be placed
-		float z = ofMap(p.x, -.5, .5, -bell, bell);
+		float z = ofMap(x, -.5, .5, -bell, bell);
 		p.y *= expf(-powf(z, 2.0f) / 2.0f) / sqrtf(TWO_PI);
+
+		if (getParameter<bool>("Audio Scale"))
+		{
+			p.y *= getResources()->audioAnalyzer->getAveragePeak();
+		}
 	}
 	//ofLog() << "eyah";
 }

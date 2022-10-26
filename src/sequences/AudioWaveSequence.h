@@ -49,8 +49,17 @@ public:
 		ofParameter<bool> audio("Use Audio", true);
 		parameters.add(audio);
 
+		ofParameter<bool> as("Audio Scale", false);
+		parameters.add(as);
+
 		ofParameter<float> yScale("Y Scale", .2, .0, 10.0);
 		parameters.add(yScale);
+
+		ofParameter<float> xFrom("X From", 0.0f, 0.0f, 1.0f);
+		parameters.add(xFrom);
+
+		ofParameter<float> xTo("X To", 1.0f, 0.0f, 1.0f);
+		parameters.add(xTo);
 
 		ofParameter<float> nScale("Noise Scale", 1.0f, 1.0, 100.0f);
 		parameters.add(nScale);

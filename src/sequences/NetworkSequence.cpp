@@ -8,6 +8,7 @@ void NetworkSequence::start(float time)
 {
 	_internalTime = 0.0f;
 	_randomSeed = getParameter<int>("Random Seed");
+	_timer = 0.0f;
 
 	//getParameter<int>("Num Lines").addListener(this, &NetworkSequence::_numLinesChangeHandler);
 
@@ -30,6 +31,7 @@ void NetworkSequence::_setupPoints()
 	ofSeedRandom(_randomSeed);
 
 	_points.clear();
+	_onStates.resize(n, false);
 
 	for (int i = 0; i < n - 1; i++)
 	{
@@ -70,6 +72,26 @@ void NetworkSequence::update(float time, float delta)
 	{
 		p.y = (ofSignedNoise((p.x * 20.0f) + _internalTime) * getParameter<float>("Y Scale"));
 	}
+
+	_timer += delta;
+
+	if (_timer >= getParameter<float>("Flash Frequency"))
+	{
+		_timer = 0.0f;
+
+		if (getParameter<bool>("Flash In Sequence"))
+		{
+			_onStates.push_front(ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha);
+			if (_onStates.size() > _points.size()) _onStates.pop_back();
+		}
+		else
+		{
+			for (auto& s : _onStates)
+			{
+				s = ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha;
+			}
+		}
+	}
 	//ofLog() << "eyah";
 }
 
@@ -77,12 +99,17 @@ void NetworkSequence::draw()
 {
 	auto lasers = getResources()->laserController->getLasers();
 	float rot = getParameter<float>("Rotation");
-	bool flash = getParameter<bool>("Flash");
 
 	ofFloatColor pColor = getParameter<ofFloatColor>("Plane Color").get();
 	ofFloatColor lColor = getParameter<ofFloatColor>("Line Color").get();
 	bool enablePlanes = getParameter<bool>("Enable Planes");
 	bool enableLines = getParameter<bool>("Enable Lines");
+
+	if (parameters.get<bool>("Fade In Alpha"))
+	{
+		pColor.setBrightness(pColor.getBrightness() * _alpha);
+		lColor.setBrightness(lColor.getBrightness() * _alpha);
+	}
 
 	int i = 0;
 	for (auto& l : lasers)
@@ -111,12 +138,16 @@ void NetworkSequence::draw()
 
 					//l->addShapeToCurrentFrame(s);
 
-					if (ofRandom(1.0) > .5 || !flash) l->addShapeToCurrentFrame(s);
+					if (!getParameter<bool>("Flash Planes") || _onStates[i]) l->addShapeToCurrentFrame(s);
+
+					//if (ofRandom(1.0) > .5 || !flash) l->addShapeToCurrentFrame(s);
 				}
 			}
 
 			if (enableLines)
 			{
+				int i = 0;
+
 				for (auto& p : _points)
 				{
 					ofxVoid::laser::LaserShape s;
@@ -129,7 +160,9 @@ void NetworkSequence::draw()
 					s.rotation = rot;
 
 					//l->addShapeToCurrentFrame(s);
-					if (ofRandom(1.0) > .5 || !flash) l->addShapeToCurrentFrame(s);
+					//if (ofRandom(1.0) > .5 || !flash) l->addShapeToCurrentFrame(s);
+					if (!getParameter<bool>("Flash Lines") || _onStates[i]) l->addShapeToCurrentFrame(s);
+					i++;
 				}
 			}
 		}

@@ -9,11 +9,14 @@
 class NetworkSequence : public ofxVoid::setlist::Sequence<Resources>
 {
 	vector<glm::vec2> _points;
+	deque<bool> _onStates;
 	float _internalTime;
+	float _timer;
 	int _randomSeed;
 
 	void _setupPoints();
 	void _numLinesChangeHandler(int& numPoints);
+	
 
 public:
 	void start(float time);
@@ -50,6 +53,9 @@ public:
 
 		parameters.add(g);
 
+		ofParameter<bool> fa("Fade In Alpha", false);
+		parameters.add(fa);
+
 
 		ofParameter<int> numLines("Num Lines", 10, 3, 50);
 		parameters.add(numLines);
@@ -78,9 +84,20 @@ public:
 		ofParameter<ofFloatColor> lineColor("Line Color", ofFloatColor(1.0, 1.0, 1.0));
 		parameters.add(lineColor);
 
-		ofParameter<bool> flash("Flash", false);
+		ofParameter<bool> flash("Flash Planes", false);
 		parameters.add(flash);
 		
+		ofParameter<bool> flash2("Flash Lines", false);
+		parameters.add(flash2);
+
+		ofParameter<float> fFreq("Flash Frequency", 0.1, 0.01, 1.0);
+		parameters.add(fFreq);
+
+		ofParameter<float> fProb("Flash Probability", 0.5, 0.0, 1.0);
+		parameters.add(fProb);
+
+		ofParameter<bool> fs("Flash In Sequence", false);
+		parameters.add(fs);
 		/** add parameters here **/
 		
 		return parameters;

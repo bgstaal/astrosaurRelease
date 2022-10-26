@@ -24,7 +24,7 @@ void ofApp::setup()
   _laserController = make_shared<LaserController>();
   _laserController->setup(3000.0f);
 
-  _audioAnalyzer = make_shared<ofxVoid::audio::AudioAnalyzer>();
+  _audioAnalyzer = make_shared<ofxVoid::audio::AudioAnalyzer>("AudioAnalyzer", 240 * ofxVoid::ui::scale);
   _audioAnalyzer->setup();
 
   _resources->audioAnalyzer = _audioAnalyzer;
