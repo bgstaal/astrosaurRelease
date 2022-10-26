@@ -10,6 +10,25 @@ void AudioWaveSequence::start(float time)
 	int n = 100;
 	_internalTime = 0.0f;
 
+	string animDir = getParameter<string>("Animation Direction");
+
+	ofLog() << animDir;
+
+	if (animDir == "Forward")
+	{
+		_clipFrom = _clipTo = 0.0f;
+	}
+	else if (animDir == "Backward")
+	{
+		_clipFrom = _clipTo = 1.0f;
+	}
+	else
+	{
+		_clipFrom = _clipTo = .5f;
+	}
+	
+	
+
 	for (int i = 0; i < n - 1; i++)
 	{
 		glm::vec2 p(-0.5, 0.5);
@@ -40,6 +59,22 @@ void AudioWaveSequence::update(float time, float delta)
 {
 	Sequence::update(time, delta);
 	_internalTime += delta * getParameter<float>("Speed");
+
+	string animDir = getParameter<string>("Animation Direction");
+
+	if (animDir == "Forward")
+	{
+		_clipTo = _alpha;
+	}
+	else if (animDir == "Backward")
+	{
+		_clipFrom = 1.0 - _alpha;
+	}
+	else
+	{
+		_clipFrom = .5 - (.5 * _alpha);
+		_clipTo = .5 + (.5 * _alpha);
+	}
 
 	auto peaks = getResources()->audioAnalyzer->getFftPeakData();
 	peaks = getResources()->audioAnalyzer->getFftRawData();
@@ -131,6 +166,8 @@ void AudioWaveSequence::draw()
 			{
 				s.path.lineTo(_points[i]);
 			}
+
+			s.setClip(_clipFrom, _clipTo);
 
 			l->addShapeToCurrentFrame(s);
 

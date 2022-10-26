@@ -98,6 +98,9 @@ public:
 		ofParameter<float> maxLen("Max Length", 0.1, 0.0, 1.0);
 		parameters.add(maxLen);
 
+		ofParameter<float> projOffset("Projector Offset Value", 0.0, 0.0, 10.0);
+		parameters.add(projOffset);
+
 		
 		
 		/** add parameters here **/

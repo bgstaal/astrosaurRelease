@@ -1,9 +1,12 @@
 {
     "set": {
         "bpm": 0.0,
-        "name": "hyttegata",
+        "name": "skog",
         "sequenceFactories": [
-            "AudioWave"
+            "Test",
+            "Network",
+            "AudioWave",
+            "Rain"
         ],
         "slots": [
             {
@@ -14,19 +17,14 @@
             {
                 "duration": 30.0,
                 "entries": [
+                    null,
                     {
                         "parameters": {
                             "group": {
-                                "Animation_Direction": "Center",
-                                "Audio_Scale": "1",
-                                "Bell_Curve_Width": "5",
-                                "Color": "1, 1, 1, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
-                                    "Laser_1": "1",
-                                    "Laser_2": "1",
-                                    "Laser_3": "1"
+                                    "Laser_1": "1"
                                 },
                                 "Effect": {
                                     "Blend_Mode": "Alpha",
@@ -34,21 +32,29 @@
                                     "Enable_Mask": "0",
                                     "Invert_Mask": "0"
                                 },
+                                "Enable_Lines": "0",
+                                "Enable_Planes": "1",
+                                "Fade_In_Alpha": "0",
+                                "Flash_Frequency": "0.0326875",
+                                "Flash_In_Sequence": "0",
+                                "Flash_Lines": "0",
+                                "Flash_Planes": "1",
+                                "Flash_Probability": "0.939583",
                                 "Label": "",
-                                "Noise_Scale": "5.5375",
-                                "Rotation": "89",
-                                "Speed": "1.89583",
+                                "Line_Color": "1, 1, 1, 1",
+                                "Num_Lines": "14",
+                                "Plane_Color": "1, 0.340348, 0.0677966, 1",
+                                "Random_Seed": "0",
+                                "Rotation": "0",
+                                "Speed": "0.1875",
                                 "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "3"
+                                    "Easing": "In Out Quad",
+                                    "Time": "2.13043"
                                 },
-                                "Use_Audio": "0",
-                                "X_From": "0.0854167",
-                                "X_To": "0.885417",
-                                "Y_Scale": "2.75"
+                                "Y_Scale": "0.0614583"
                             }
                         },
-                        "sequenceFactoryIndex": 0
+                        "sequenceFactoryIndex": 1
                     }
                 ],
                 "name": ""

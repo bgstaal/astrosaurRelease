@@ -2,6 +2,7 @@
 
 #include "ofxVoid/setlist/Sequence.h"
 #include "../utils/Resources.h"
+#include "ofxVoid/types/Select.h"
 
 
 #pragma mark - Sequence class
@@ -10,6 +11,8 @@ class AudioWaveSequence : public ofxVoid::setlist::Sequence<Resources>
 {
 	vector<glm::vec2> _points;
 	float _internalTime;
+	float _clipFrom;
+	float _clipTo;
 
 public:
 	void start(float time);
@@ -45,6 +48,16 @@ public:
 		}
 
 		parameters.add(g);
+
+		vector<string> o;
+		o.push_back("Forward");
+		o.push_back("Backward");
+		o.push_back("Center");
+
+		ofxVoid::types::Select<string> s("Forward", o);
+
+		ofParameter<ofxVoid::types::Select<string>> ad("Animation Direction", s);
+		parameters.add(ad);
 
 		ofParameter<bool> audio("Use Audio", true);
 		parameters.add(audio);

@@ -1,9 +1,9 @@
 {
     "set": {
         "bpm": 0.0,
-        "name": "hyttegata",
+        "name": "foss",
         "sequenceFactories": [
-            "AudioWave"
+            "Rain"
         ],
         "slots": [
             {
@@ -17,10 +17,7 @@
                     {
                         "parameters": {
                             "group": {
-                                "Animation_Direction": "Center",
-                                "Audio_Scale": "1",
-                                "Bell_Curve_Width": "5",
-                                "Color": "1, 1, 1, 1",
+                                "Color": "0.561441, 1, 0.871777, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -35,17 +32,23 @@
                                     "Invert_Mask": "0"
                                 },
                                 "Label": "",
-                                "Noise_Scale": "5.5375",
-                                "Rotation": "89",
-                                "Speed": "1.89583",
+                                "Max_Length": "0.1",
+                                "Max_Velocity": "0.5",
+                                "Min_Length": "0.03",
+                                "Min_Velocity": "0.09375",
+                                "Noise_Line_Offset": "0.1",
+                                "Noise_Scale": "2.25",
+                                "Noise_Speed": "0.05",
+                                "Noise_Strength": "0.0479167",
+                                "Num_Lines": "12",
+                                "Projector_Offset_Value": "7.14583",
+                                "Rotation": "0",
+                                "Speed": "1",
+                                "Total_Width": "0.589583",
                                 "Transition": {
                                     "Easing": "Out Quad",
                                     "Time": "3"
-                                },
-                                "Use_Audio": "0",
-                                "X_From": "0.0854167",
-                                "X_To": "0.885417",
-                                "Y_Scale": "2.75"
+                                }
                             }
                         },
                         "sequenceFactoryIndex": 0

@@ -79,17 +79,9 @@ void NetworkSequence::update(float time, float delta)
 	{
 		_timer = 0.0f;
 
-		if (getParameter<bool>("Flash In Sequence"))
+		for (auto& s : _onStates)
 		{
-			_onStates.push_front(ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha);
-			if (_onStates.size() > _points.size()) _onStates.pop_back();
-		}
-		else
-		{
-			for (auto& s : _onStates)
-			{
-				s = ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha;
-			}
+			s = ofRandom(1.0) < getParameter<float>("Flash Probability") * _alpha;
 		}
 	}
 	//ofLog() << "eyah";

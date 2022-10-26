@@ -73,14 +73,14 @@ void LaserController::setup(float height)
    }
   }, 0);
 
-  int num = 2;
-  float startX =  5000 * (num-1) * -.5;
+  int num = 4;
+  float startX =  6000 * (num-1) * -.5;
   
   for (int i = 0; i < num; i++)
   {
 	  auto laser = std::make_shared<ofxVoid::laser::Laser>();
 	  laser->setRotation(glm::vec3(-90, 0, 0));
-	  laser->setPosition(glm::vec3(startX + i * (2000), _height, 0.0f));
+	  laser->setPosition(glm::vec3(startX + i * (6000), _height, 0.0f));
 	  laser->setFrustumDepth(_height);
 
 	  _lasers.push_back(laser);

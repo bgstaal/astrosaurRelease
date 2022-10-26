@@ -1,8 +1,9 @@
 {
     "setlist": {
-        "sets": [
-            "sets/test.json",
-            "sets/hyttegata.json"
-        ]
+      "sets": [
+        "sets/foss.json",
+        "sets/hyttegata.json",
+        "sets/skog.json"
+      ]
     }
 }

@@ -13,7 +13,7 @@ void RainSequence::start(float time)
 	for (int i = 0; i < 20; i++)
 	{
 		Mover m;
-		m.rat = 0.0f;
+		m.rat = ofRandom(-1, 0);
 		m.lineIndex = i;
 		_initiateParams(m);
 		_movers.push_back(m);
@@ -61,8 +61,10 @@ void RainSequence::draw()
 	float totalWidth = getParameter<float>("Total Width");
 	float noiseScale = getParameter<float>("Noise Scale");
 	float noiseStrength= getParameter<float>("Noise Strength");
+	float projOffset = getParameter<float>("Projector Offset Value");
 
 	ofFloatColor pColor = getParameter<ofFloatColor>("Color").get();
+	pColor.setBrightness(pColor.getBrightness() * _alpha);
 
 	int i = 0;
 	for (auto& l : lasers)
@@ -83,12 +85,12 @@ void RainSequence::draw()
 				int n = 100;
 				float x = -(totalWidth*.5f) + ((j / (float)(nLines - 1)) * totalWidth);
 
-				for (int i = 0; i < n; i++)
+				for (int k = 0; k < n; k++)
 				{
-					float y = -0.5 + (i / (float)(n - 1));
-					x += ofSignedNoise(j * 0.1, y * noiseScale, _noiseTime) * noiseStrength * 0.1;
+					float y = -0.5 + (k / (float)(n - 1));
+					x += ofSignedNoise((j * 0.1) + (i * projOffset), y * noiseScale, _noiseTime) * noiseStrength * 0.1;
 
-					if (i == 0)
+					if (k == 0)
 					{
 						s.path.moveTo(x, y);
 					}
@@ -113,17 +115,20 @@ void RainSequence::draw()
 				auto line = s.path.getOutline()[j];
 				float lStep = m.length / 9.0f;
 
-				for (int i = 0; i < 10; i++)
+				if (rat >= 0.0)
 				{
-					auto p = line.getPointAtPercent(rat - (i * lStep));
+					for (int i = 0; i < 10; i++)
+					{
+						auto p = line.getPointAtPercent(rat - (i * lStep));
 
-					if (i == 0)
-					{
-						s2.path.moveTo(p);
-					}
-					else
-					{
-						s2.path.lineTo(p);
+						if (i == 0)
+						{
+							s2.path.moveTo(p);
+						}
+						else
+						{
+							s2.path.lineTo(p);
+						}
 					}
 				}
 			}

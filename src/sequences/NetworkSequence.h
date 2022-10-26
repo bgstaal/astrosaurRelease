@@ -95,10 +95,9 @@ public:
 
 		ofParameter<float> fProb("Flash Probability", 0.5, 0.0, 1.0);
 		parameters.add(fProb);
-
-		ofParameter<bool> fs("Flash In Sequence", false);
-		parameters.add(fs);
-		/** add parameters here **/
+		
+		ofParameter<float> projOffset("Projector Offset Value", 0.0, 0.0, 10.0);
+		parameters.add(projOffset);
 		
 		return parameters;
 	}
