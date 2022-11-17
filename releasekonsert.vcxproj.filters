@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\LaserController.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\sequences\AudioWaveSequence.cpp">
+			<Filter>src\sequences</Filter>
+		</ClCompile>
+		<ClCompile Include="src\sequences\LaserShapeSequence.cpp">
+			<Filter>src\sequences</Filter>
+		</ClCompile>
+		<ClCompile Include="src\sequences\NetworkSequence.cpp">
+			<Filter>src\sequences</Filter>
+		</ClCompile>
+		<ClCompile Include="src\sequences\RainSequence.cpp">
+			<Filter>src\sequences</Filter>
+		</ClCompile>
+		<ClCompile Include="src\sequences\TestSequence.cpp">
+			<Filter>src\sequences</Filter>
+		</ClCompile>
+		<ClCompile Include="src\sequences\TriggerSequence.cpp">
+			<Filter>src\sequences</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ui\Simulator.cpp">
+			<Filter>src\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFT\src\ofxFFTBase.cpp">
+			<Filter>addons\ofxFFT\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFT\src\ofxFFTFile.cpp">
+			<Filter>addons\ofxFFT\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFT\src\ofxFFTLive.cpp">
+			<Filter>addons\ofxFFT\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFT\libs\fft.cpp">
+			<Filter>addons\ofxFFT\libs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiIn.cpp">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiOut.cpp">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxBaseMidi.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidi.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiClock.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiIn.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiMessage.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiOut.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiTimecode.cpp">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxMidi\libs\rtmidi\RtMidi.cpp">
+			<Filter>addons\ofxMidi\libs\rtmidi</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxTweenzor\src\ofParameterTween.cpp">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxTweenzor\src\Tween.cpp">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxTweenzor\src\Tweenzor.cpp">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
+			<Filter>addons\ofxXmlSettings\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp">
+			<Filter>addons\ofxXmlSettings\libs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
+			<Filter>addons\ofxXmlSettings\libs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
+			<Filter>addons\ofxXmlSettings\libs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\FboPlane.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\FboPool.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\FboWindow.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\Ray.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\Timer.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\filters\Blur.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\filters</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\filters\ColorAdjustment.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\filters</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\filters\SlitScan.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\filters</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\GradientFill.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\Shapes.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\TexturedVertexGrid.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\VertexGrid.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\math\Gaussian.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\math</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\math\Noise.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\math</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Gradient.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\ParameterUtils.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\utils</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\PolylineUtils.cpp">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\utils</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\gestureworks\GWWrapper.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\gestureworks</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Component.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\CursorOSX.mm">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DirectionSelector.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DisplayObject.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DraggableObject.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\GestureObject.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Group.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\IconBar.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\IconButton.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\LoadingSpinner.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Pad.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Panel.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\PolylineEditor.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\RangeSlider.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Recorder.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ScrollField.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ShapingFunctionEditor.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\StarDiagram.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\StatusLabel.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TabButton.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TabLayout.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ui.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ValueLabel.cpp">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\Laser.cpp">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserShape.cpp">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\Beyond.cpp">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser\pangolin</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\BeyondZone.cpp">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser\pangolin</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateChildSequence.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist\sequence</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateParentSequence.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist\sequence</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateSequence.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist\sequence</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Sequence.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Set.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetList.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetListView.cpp">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidMidi\src\ofxVoid\midi\MidiControlMapper.cpp">
+			<Filter>addons\ofxVoidMidi\src\ofxVoid\midi</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVoidMidi\src\ofxVoid\midi\MidiManager.cpp">
+			<Filter>addons\ofxVoidMidi\src\ofxVoid\midi</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\sequences">
+			<UniqueIdentifier>{A6DA33C4-DF3B-6CF5-A680-ECCA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\ui">
+			<UniqueIdentifier>{34F0B3B1-2BDA-A36D-9F63-1753}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\utils">
+			<UniqueIdentifier>{FF53B027-68B2-4010-4AB2-068A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFT">
+			<UniqueIdentifier>{A51EF345-6145-7F34-5210-584B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFT\src">
+			<UniqueIdentifier>{CEF5BE20-E223-E8E5-5FDB-C2D7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFT\libs">
+			<UniqueIdentifier>{1AA69749-353B-6094-7733-4489}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi">
+			<UniqueIdentifier>{4DF4D977-A753-531B-5057-9AC1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\src">
+			<UniqueIdentifier>{7EED8620-FDD5-520C-3F5D-2677}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\src\desktop">
+			<UniqueIdentifier>{03CA45A4-AB22-A57E-895E-C6BC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\libs">
+			<UniqueIdentifier>{B8086AD6-372B-1A12-88A6-74F9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxMidi\libs\rtmidi">
+			<UniqueIdentifier>{8E6C5628-3502-6F01-4B1D-AEAE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxTweenzor">
+			<UniqueIdentifier>{01C39FF4-5B53-3070-C89A-1750}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxTweenzor\src">
+			<UniqueIdentifier>{5D58D81D-C685-E91E-0E62-80F4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxXmlSettings">
+			<UniqueIdentifier>{877F005D-13E6-0592-1D97-F2E3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxXmlSettings\src">
+			<UniqueIdentifier>{CCB2AC63-49D2-977C-CFE8-AEAD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxXmlSettings\libs">
+			<UniqueIdentifier>{687714A8-1662-FA1C-261F-50F0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore">
+			<UniqueIdentifier>{DB408EA3-7BD7-308E-EF8C-1649}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src">
+			<UniqueIdentifier>{815207DB-A8A2-810F-3565-0D3A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid">
+			<UniqueIdentifier>{E98EC9F4-735A-143B-20BC-C049}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid\core">
+			<UniqueIdentifier>{AB9B15A6-522A-0B7E-AC81-B8D8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid\filters">
+			<UniqueIdentifier>{EF4EBE30-6815-E380-DF46-16E1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid\graphics">
+			<UniqueIdentifier>{99A5A75D-4C69-B837-98E8-BEC5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid\math">
+			<UniqueIdentifier>{2CCF6818-4F62-A4CC-D02C-513C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid\types">
+			<UniqueIdentifier>{C2C204A4-90CF-36E7-5197-906E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\src\ofxVoid\utils">
+			<UniqueIdentifier>{4024743E-2E62-36C5-67F1-690A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\libs">
+			<UniqueIdentifier>{4F41295A-BAB1-9A8A-2FDB-6C61}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\libs\tk">
+			<UniqueIdentifier>{1E02B00E-82EA-DE5A-401D-1900}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidCore\libs\tk\include">
+			<UniqueIdentifier>{489B704C-87A2-6186-8C82-0C92}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi">
+			<UniqueIdentifier>{78FD7926-81BF-AA3D-925A-3B63}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\src">
+			<UniqueIdentifier>{420F046B-71F2-D070-413D-8B6B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\src\ofxVoid">
+			<UniqueIdentifier>{48C22F52-4A61-4224-A692-24F9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\src\ofxVoid\gestureworks">
+			<UniqueIdentifier>{D63C90BA-9E15-6974-29B5-F402}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\src\ofxVoid\ui">
+			<UniqueIdentifier>{EA4F4873-08DC-5873-9171-34A3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\libs">
+			<UniqueIdentifier>{02756E26-FDBE-E1FF-8005-7032}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\libs\gestureworks2">
+			<UniqueIdentifier>{80CE70D8-B16C-EE0E-0AF3-A1EF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidUi\libs\gestureworks2\include">
+			<UniqueIdentifier>{B9784BFA-52A9-D94F-B4C2-5F06}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidAudio">
+			<UniqueIdentifier>{CADF6D8D-2B6A-79E0-2048-E56C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidAudio\src">
+			<UniqueIdentifier>{256583D6-3D2B-BAB6-953D-7E1C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidAudio\src\ofxVoid">
+			<UniqueIdentifier>{DE202578-AACD-47F8-ADA1-7068}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidAudio\src\ofxVoid\audio">
+			<UniqueIdentifier>{E7D0B548-E53F-9823-5A5F-24A9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidLaser">
+			<UniqueIdentifier>{E7275723-EFE9-F1D7-BDE8-0C1E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidLaser\src">
+			<UniqueIdentifier>{A4E591DA-E4B5-35D0-BA3D-90ED}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidLaser\src\ofxVoid">
+			<UniqueIdentifier>{D2A8B9C4-4083-EDE0-85F0-A8D9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidLaser\src\ofxVoid\laser">
+			<UniqueIdentifier>{0018B4E3-8B80-F9C0-C193-2F57}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidLaser\src\ofxVoid\laser\pangolin">
+			<UniqueIdentifier>{FF237B14-68EE-DDA4-EA21-FB2B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidSetList">
+			<UniqueIdentifier>{EA4D29AA-79D6-CE65-7A55-0946}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidSetList\src">
+			<UniqueIdentifier>{3DFC4A12-6D46-1080-33CD-D78A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidSetList\src\ofxVoid">
+			<UniqueIdentifier>{0AA533C0-DB15-984C-476E-316B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidSetList\src\ofxVoid\setlist">
+			<UniqueIdentifier>{51862DC4-5036-7B7E-C067-8A79}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidSetList\src\ofxVoid\setlist\sequence">
+			<UniqueIdentifier>{8D5024CD-7772-0C70-0415-8435}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidMidi">
+			<UniqueIdentifier>{EF3F8E5C-89F6-8820-83B4-C65F}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidMidi\src">
+			<UniqueIdentifier>{2B539E5C-302C-56D2-393C-24E5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidMidi\src\ofxVoid">
+			<UniqueIdentifier>{FD4D3AD8-C116-CD8D-AB7C-B635}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVoidMidi\src\ofxVoid\midi">
+			<UniqueIdentifier>{A4ED7C54-FF77-7217-AC55-47D6}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\LaserController.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\sequences\AudioWaveSequence.h">
+			<Filter>src\sequences</Filter>
+		</ClInclude>
+		<ClInclude Include="src\sequences\LaserShapeSequence.h">
+			<Filter>src\sequences</Filter>
+		</ClInclude>
+		<ClInclude Include="src\sequences\NetworkSequence.h">
+			<Filter>src\sequences</Filter>
+		</ClInclude>
+		<ClInclude Include="src\sequences\RainSequence.h">
+			<Filter>src\sequences</Filter>
+		</ClInclude>
+		<ClInclude Include="src\sequences\TestSequence.h">
+			<Filter>src\sequences</Filter>
+		</ClInclude>
+		<ClInclude Include="src\sequences\TriggerSequence.h">
+			<Filter>src\sequences</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ui\Simulator.h">
+			<Filter>src\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="src\utils\Resources.h">
+			<Filter>src\utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFT\src\ofxFFTBase.h">
+			<Filter>addons\ofxFFT\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFT\src\ofxFFTFile.h">
+			<Filter>addons\ofxFFT\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFT\src\ofxFFTLive.h">
+			<Filter>addons\ofxFFT\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFT\libs\fft.h">
+			<Filter>addons\ofxFFT\libs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiIn.h">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiOut.h">
+			<Filter>addons\ofxMidi\src\desktop</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxBaseMidi.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidi.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiClock.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiConstants.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiIn.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiMessage.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiOut.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiTimecode.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiTypes.h">
+			<Filter>addons\ofxMidi\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxMidi\libs\rtmidi\RtMidi.h">
+			<Filter>addons\ofxMidi\libs\rtmidi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\ofParameterTween.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\ofxTweenzor.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\Tween.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\TweenEvent.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\TweenFunctions.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\TweenSelector.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTweenzor\src\Tweenzor.h">
+			<Filter>addons\ofxTweenzor\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
+			<Filter>addons\ofxXmlSettings\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h">
+			<Filter>addons\ofxXmlSettings\libs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\AssetModel.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\ByteArray.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\FboPlane.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\FboPool.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\FboWindow.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\Ray.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\core\Timer.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\filters\Blur.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\filters</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\filters\ColorAdjustment.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\filters</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\filters\SlitScan.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\filters</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\AsyncImage.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\GradientFill.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\Shapes.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\Stencil.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\TexturedVertexGrid.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\graphics\VertexGrid.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\math\Gaussian.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\math</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\math\Noise.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\math</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\math\Shaping.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\math</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\math\Waveform.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\math</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\ButtonEvent.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\File.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Gradient.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Pad.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Range.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Select.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\ShapingFunctions.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\types\Spacer.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\types</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\JSONUtils.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\ParameterUtils.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\PolylineUtils.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\src\ofxVoid\utils\ProximityManager.h">
+			<Filter>addons\ofxVoidCore\src\ofxVoid\utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidCore\libs\tk\include\tkSpline.h">
+			<Filter>addons\ofxVoidCore\libs\tk\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\gestureworks\GWWrapper.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\gestureworks</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\AllComponents.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Button.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\CellLayout.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Circle.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ColorPicker.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Component.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Cursor.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\CursorOSX.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DirectionSelector.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DisplayObject.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DraggableObject.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\DropdownSelection.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ExpandableValueLabel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\FileSelector.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\FpsLabel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\GestureObject.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\GradientSampler.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\GradientView.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Group.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\IconBar.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\IconButton.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ImageView.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Label.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\LabelButton.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\LoadingSpinner.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ModalPanel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Pad.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Panel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ParameterButton.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Plotter.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\PolylineEditor.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\RadioButtons.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\RangeSlider.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Recorder.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Rectangle.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Scene2d.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Scene3d.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ScrollField.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\SelectionPanel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ShapingFunctionEditor.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Slider.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Spacer.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\StarDiagram.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\StatusLabel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Style.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TabButton.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TabLayout.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TextField.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\TextInputField.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\Toggle.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ui.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\ValueLabel.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\src\ofxVoid\ui\VectorSlider.h">
+			<Filter>addons\ofxVoidUi\src\ofxVoid\ui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidUi\libs\gestureworks2\include\GestureWorks2.h">
+			<Filter>addons\ofxVoidUi\libs\gestureworks2\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidAudio\src\ofxVoid\audio\AudioAnalyzer.h">
+			<Filter>addons\ofxVoidAudio\src\ofxVoid\audio</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\Laser.h">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserFrame.h">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\LaserShape.h">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\Beyond.h">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser\pangolin</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidLaser\src\ofxVoid\laser\pangolin\BeyondZone.h">
+			<Filter>addons\ofxVoidLaser\src\ofxVoid\laser\pangolin</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Effect.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateChildSequence.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist\sequence</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateParentSequence.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist\sequence</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\sequence\TemplateSequence.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist\sequence</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Sequence.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\Set.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetList.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidSetList\src\ofxVoid\setlist\SetListView.h">
+			<Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidMidi\src\ofxVoid\midi\Metronome.h">
+			<Filter>addons\ofxVoidMidi\src\ofxVoid\midi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidMidi\src\ofxVoid\midi\MidiControlMapper.h">
+			<Filter>addons\ofxVoidMidi\src\ofxVoid\midi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVoidMidi\src\ofxVoid\midi\MidiManager.h">
+			<Filter>addons\ofxVoidMidi\src\ofxVoid\midi</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

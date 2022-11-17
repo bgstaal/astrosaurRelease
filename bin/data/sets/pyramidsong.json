@@ -1,0 +1,98 @@
+{
+    "set": {
+        "bpm": 0.0,
+        "name": "pyramidsong",
+        "sequenceFactories": [
+            "Rain",
+            "Rain",
+            "LaserShape"
+        ],
+        "slots": [
+            {
+                "duration": 30.0,
+                "entries": [
+                    null,
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "0.769248, 0.936441, 0.48806, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "1",
+                                    "Laser_2": "1",
+                                    "Laser_3": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Enable_Ring": "0",
+                                "Flash_LED": "0",
+                                "Label": "",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "0",
+                                    "Note_Channel": "-1",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "invisible_when_small": "0",
+                                "rotate_to_clock": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.525"
+                            }
+                        },
+                        "sequenceFactoryIndex": 2
+                    }
+                ],
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": null,
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": null,
+                "name": ""
+            }
+        ]
+    }
+}
