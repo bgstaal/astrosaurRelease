@@ -16,6 +16,11 @@
             },
             {
                 "duration": 30.0,
+                "entries": null,
+                "name": ""
+            },
+            {
+                "duration": 30.0,
                 "entries": [
                     null,
                     {
@@ -40,30 +45,25 @@
                                 "Flash_Frequency": "0.0326875",
                                 "Flash_Lines": "0",
                                 "Flash_Planes": "1",
-                                "Flash_Probability": "0.939583",
+                                "Flash_Probability": "0.9",
                                 "Label": "",
                                 "Line_Color": "1, 1, 1, 1",
-                                "Num_Lines": "14",
-                                "Plane_Color": "1, 0.340348, 0.0677966, 1",
+                                "Num_Lines": "15",
+                                "Plane_Color": "1, 0.0635593, 0, 1",
                                 "Projector_Offset_Value": "6.58333",
                                 "Random_Seed": "0",
                                 "Rotation": "0",
-                                "Speed": "0.1875",
+                                "Speed": "0.28125",
                                 "Transition": {
                                     "Easing": "In Out Quad",
                                     "Time": "2.13043"
                                 },
-                                "Y_Scale": "0.0614583"
+                                "Y_Scale": "0.0270833"
                             }
                         },
                         "sequenceFactoryIndex": 1
                     }
                 ],
-                "name": ""
-            },
-            {
-                "duration": 30.0,
-                "entries": null,
                 "name": ""
             }
         ]

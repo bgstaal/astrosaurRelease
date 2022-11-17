@@ -12,6 +12,8 @@
 #include "LaserController.h"
 
 #include "ofxVoid/audio/AudioAnalyzer.h"
+#include "ofxVoid/midi/MidiManager.h"
+#include "ofxVoid/midi/Metronome.h"
 
 
 class ofApp : public ofBaseApp
@@ -38,6 +40,8 @@ private:
   shared_ptr<LaserController> _laserController;
   shared_ptr<Resources> _resources;
   shared_ptr<ofxVoid::audio::AudioAnalyzer> _audioAnalyzer;
+  shared_ptr<ofxVoid::midi::MidiManager> _midiManager;
+  shared_ptr<ofxVoid::midi::Metronome> _metronome;
   
   void _loadSettings();
   void _saveSettings();

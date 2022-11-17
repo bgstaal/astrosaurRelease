@@ -4,6 +4,7 @@
 #include "sequences/NetworkSequence.h"
 #include "sequences/AudioWaveSequence.h"
 #include "sequences/RainSequence.h"
+#include "sequences/LaserShapeSequence.h"
 
 #pragma mark - Public methods
 
@@ -27,14 +28,23 @@ void ofApp::setup()
   _audioAnalyzer = make_shared<ofxVoid::audio::AudioAnalyzer>("AudioAnalyzer", 240 * ofxVoid::ui::scale);
   _audioAnalyzer->setup();
 
+  _midiManager = make_shared<ofxVoid::midi::MidiManager>();
+  _midiManager->setup();
+
+  _metronome = make_shared<ofxVoid::midi::Metronome>();
+  _metronome->enableMidiClock(_midiManager);
+
   _resources->audioAnalyzer = _audioAnalyzer;
   _resources->laserController = _laserController;
+  _resources->midi = _midiManager;
+  _resources->metronome = _metronome;
   
   vector<shared_ptr<ofxVoid::setlist::SequenceFactoryAbstract>> factories;
   factories.push_back(make_shared<TestSequenceFactory>());
   factories.push_back(make_shared<NetworkSequenceFactory>());
   factories.push_back(make_shared<AudioWaveSequenceFactory>());
   factories.push_back(make_shared<RainSequenceFactory>());
+  factories.push_back(make_shared<LaserShapeSequenceFactory>());
   
   // Add factories here
   
@@ -59,6 +69,10 @@ void ofApp::setup()
   rightPanel->addComponent(ofxVoid::ui::FpsLabel::create());
   rightPanel->addComponent(ofxVoid::ui::Spacer::create());
   rightPanel->addComponent(_audioAnalyzer);
+  rightPanel->addComponent(ofxVoid::ui::Spacer::create());
+  rightPanel->addComponent(_metronome);
+  rightPanel->addComponent(ofxVoid::ui::Spacer::create());
+  rightPanel->addComponent(_midiManager);
   rightPanel->addComponent(ofxVoid::ui::Spacer::create());
 
   auto laserGroup = ofxVoid::ui::Group::create("Laser Settings", false);
@@ -93,6 +107,9 @@ void ofApp::update()
 
   Tweenzor::update(t * 1000);
 
+  _midiManager->update(t, d);
+  _metronome->update();
+
   _laserController->update(t, d);
   _audioAnalyzer->update();
   _setlist->update(t, d);
@@ -119,7 +136,18 @@ void ofApp::exit()
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key)
 {
-
+    ofLog() << "key: " << key;
+    if (key == 32) //space
+    {
+        if (_metronome->isRunning())
+        {
+            _metronome->stop();
+        }
+        else
+        {
+            _metronome->start();
+        }
+    }
 }
 
 //--------------------------------------------------------------

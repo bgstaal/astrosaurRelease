@@ -18,7 +18,7 @@ std::vector<std::shared_ptr<ofxVoid::laser::Laser>> LaserController::getLasers()
 void LaserController::setup(float height)
 {
   _font.load("fonts/Theinhardt Light.otf", 100, true, false, true);
-  _height = height;
+  _height = 2900;
   
 #ifdef TARGET_WIN32
   _beyond = make_shared<Beyond>();
@@ -59,7 +59,7 @@ void LaserController::setup(float height)
   ofParameter<float> br("brightness", 1.0f, 0.0f, 1.0f);
   parameters.add(br);
   
-  ofParameter<ofVec2f> fov("fov", ofVec2f(60.0f, 60.0f), ofVec2f(20.0f, 20.0f), ofVec2f(60.0f, 60.0f));
+  ofParameter<ofVec2f> fov("fov", ofVec2f(40.0f, 40.0f), ofVec2f(20.0f, 20.0f), ofVec2f(60.0f, 60.0f));
   parameters.add(fov);
   
   parameters.parameterChangedE().add([this](ofAbstractParameter &p)
@@ -73,35 +73,51 @@ void LaserController::setup(float height)
    }
   }, 0);
 
-  int num = 4;
-  float startX =  6000 * (num-1) * -.5;
+  int num = 3;
+  float spacing = 2000;
+  float startX =  spacing * (num-1) * -.5;
+
+  vector<pair<int, int>> inds;
+  inds.push_back(make_pair(0, 0));
+  inds.push_back(make_pair(1, 1));
+  inds.push_back(make_pair(2, 2));
+  inds.push_back(make_pair(3, 3));
+  inds.push_back(make_pair(4, 4));
   
   for (int i = 0; i < num; i++)
   {
 	  auto laser = std::make_shared<ofxVoid::laser::Laser>();
-	  laser->setRotation(glm::vec3(-90, 0, 0));
-	  laser->setPosition(glm::vec3(startX + i * (6000), _height, 0.0f));
+	  laser->setRotation(glm::vec3(-90, 0, 45));
+	  laser->setPosition(glm::vec3(startX + i * (spacing), _height, 0.0f));
 	  laser->setFrustumDepth(_height);
 
 	  _lasers.push_back(laser);
 
 	#ifdef TARGET_WIN32
-		  int zoneIndex = i;
-		  int projectorIndex = i;
+		  int zoneIndex = inds[i].first;
+		  int projectorIndex = inds[i].second;
 
 		  auto zone = make_shared<BeyondZone>();
 		  zone->setup(_beyond, "zone" + ofToString(zoneIndex), zoneIndex, projectorIndex);
 		  _zones[laser] = zone;
 	#endif
-
-
-		  /*
-	parameters.add(_laser->parameters.get<float>("brightness"));
-	parameters.add(_laser->parameters.get<float>("r correction"));
-	parameters.add(_laser->parameters.get<float>("g correction"));
-	parameters.add(_laser->parameters.get<float>("b correction"));
-	*/
   }
+
+  auto laser = std::make_shared<ofxVoid::laser::Laser>();
+  laser->setRotation(glm::vec3(-25, 180, 0));
+  laser->setPosition(glm::vec3(0, 1500, -2000));
+  laser->setFrustumDepth(200000);
+
+  _lasers.push_back(laser);
+
+#ifdef TARGET_WIN32
+  int zoneIndex = inds[4].first;
+  int projectorIndex = inds[4].second;
+
+  auto zone = make_shared<BeyondZone>();
+  zone->setup(_beyond, "zone" + ofToString(zoneIndex), zoneIndex, projectorIndex);
+  _zones[laser] = zone;
+#endif
 }
 
 void LaserController::update(float time, float timeStep)

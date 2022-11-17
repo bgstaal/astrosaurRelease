@@ -1,4 +1,5 @@
 ofxFFT
+ofxMidi
 ofxTweenzor
 ofxXmlSettings
 ofxVoidCore
@@ -6,3 +7,4 @@ ofxVoidUi
 ofxVoidAudio
 ofxVoidLaser
 ofxVoidSetList
+ofxVoidMidi

@@ -220,6 +220,12 @@
     <ClCompile Include="src\sequences\RainSequence.cpp">
       <Filter>src\sequences</Filter>
     </ClCompile>
+    <ClCompile Include="src\sequences\LaserShapeSequence.cpp">
+      <Filter>src\sequences</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sequences\TriggerSequence.cpp">
+      <Filter>src\sequences</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -735,6 +741,12 @@
       <Filter>addons\ofxVoidSetList\src\ofxVoid\setlist</Filter>
     </ClInclude>
     <ClInclude Include="src\sequences\RainSequence.h">
+      <Filter>src\sequences</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sequences\LaserShapeSequence.h">
+      <Filter>src\sequences</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sequences\TriggerSequence.h">
       <Filter>src\sequences</Filter>
     </ClInclude>
   </ItemGroup>
