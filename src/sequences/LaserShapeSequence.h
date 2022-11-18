@@ -9,6 +9,12 @@
 class LaserShapeSequence : public TriggerSequence
 {
 public:
+
+	struct FlashPoint
+	{
+		float rat;
+		float alpha;
+	};
 	
 	void start(float time);
 	void update(float time, float timeStep);
@@ -18,9 +24,12 @@ public:
 	
 protected:
 
+	vector<FlashPoint> _flashPoints;
+
 	void _onNoteTrigger(ofxMidiMessage & msg);
 	void _onBeatTrigger();
-  void _onRunTrigger(int position);
+	void _onRunTrigger(int position);
+	void _addFlashPoint();
 	
 	
 private:
@@ -114,9 +123,6 @@ public:
 		
 		ofParameter<float> rvel("rotational velocity", 0.0f, -360.0f, 360.0f);
 		parameters.add(rvel);
-
-		ofParameter<bool> linkbeat("rotate to clock", false);
-		parameters.add(linkbeat);
 		
 		ofParameter<float> dec("decay", 0.90f, 0.70f, 0.99f);
 		parameters.add(dec);
@@ -132,6 +138,9 @@ public:
     
 		ofParameter<ofxVoid::types::Select<string>> dtype("decay type", fs);
 		parameters.add(dtype);
+
+		ofParameter<bool> flashP("flash points", false);
+		parameters.add(flashP);
 		
 		return parameters;
 	}

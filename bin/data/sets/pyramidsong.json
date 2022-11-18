@@ -18,7 +18,7 @@
                             "group": {
                                 "Beat": {
                                     "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
+                                    "Enable_Beat": "1",
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
@@ -36,8 +36,6 @@
                                     "Enable_Mask": "0",
                                     "Invert_Mask": "0"
                                 },
-                                "Enable_Ring": "0",
-                                "Flash_LED": "0",
                                 "Label": "",
                                 "Midi": {
                                     "Control_Channel": "-1",
@@ -55,6 +53,8 @@
                                     "Run_Nth_Quad": "4",
                                     "Sustain": "0"
                                 },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
                                 "Transition": {
                                     "Easing": "Out Quad",
                                     "Time": "0"
@@ -70,8 +70,10 @@
                                 "clip_to": "1",
                                 "decay": "0.9",
                                 "decay_type": "fade",
+                                "flash_points": "0",
                                 "invisible_when_small": "0",
-                                "rotate_to_clock": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
                                 "rotation": "-45",
                                 "rotational_velocity": "0",
                                 "shape": "line",

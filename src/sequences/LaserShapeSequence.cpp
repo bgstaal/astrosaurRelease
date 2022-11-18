@@ -28,17 +28,10 @@ void LaserShapeSequence::update(float time, float timeStep)
 
 		float speed = parameters.get<float>("rotational velocity");
 
-		if (getParameter<bool>("rotate to clock"))
-		{
-			_rotations[i] = getResources()->metronome->getBeatCountSmooth() * speed;
-		}
-		else
-		{
-			float vel = speed * timeStep;
-			//vel *= 360.0f;
-			//if (mirror) vel *= -1;
-			_rotations[i] += vel;
-		}
+		float vel = speed * timeStep;
+		//vel *= 360.0f;
+		//if (mirror) vel *= -1;
+		_rotations[i] += vel;
 
 		auto &s = _shapes[i];
 		float from = ofClamp(MIN(parameters.get<float>("clip from").get(), parameters.get<float>("clip to").get()), 0.0f, 1.0f);
@@ -59,6 +52,18 @@ void LaserShapeSequence::update(float time, float timeStep)
 	
 	float decay = parameters.get<float>("decay");
 	_values[0] *= decay;
+
+	for (int i = 0; i < _flashPoints.size(); i++)
+	{
+		auto& p = _flashPoints[i];
+		p.alpha *= decay;
+
+		if (p.alpha < .1) 
+		{
+			_flashPoints.erase(_flashPoints.begin() + i);
+			i--;
+		}
+	}
 }
 
 void LaserShapeSequence::draw()
@@ -70,7 +75,8 @@ void LaserShapeSequence::draw()
 	auto size = parameters.get<float>("size");
 	float minAlpha = parameters.get<float>("min alpha");
 	float maxAlpha = parameters.get<float>("max alpha");
-
+	bool doFlashPoints = getParameter<bool>("flash points");
+	string decayType = parameters.get<string>("decay type");
 
 	int i = 0;
 	for (auto& l : lasers)
@@ -100,13 +106,11 @@ void LaserShapeSequence::draw()
 
 			if (isNoteEnabled() || isBeatEnabled())
 			{
-				string type = parameters.get<string>("decay type");
-
-				if (type == "scale")
+				if (decayType == "scale")
 				{
 					hs *= _values[0];
 				}
-				else if (type == "flash")
+				else if (decayType == "flash")
 				{
 					c.a = _values[0] > 0.5f ? maxAlpha : minAlpha;
 				}
@@ -119,6 +123,8 @@ void LaserShapeSequence::draw()
 				{
 					drawIt = false;
 				}
+
+				if (doFlashPoints) drawIt = true;
 			}
 
 			if (getParameter<bool>("invisible when small") && size <= LaserShape::minPointSize)
@@ -129,10 +135,7 @@ void LaserShapeSequence::draw()
 			if (drawIt)
 			{
 				s.path.clear();
-
 				s.color = ofColor(c.r * 255.0f, c.g * 255.0f, c.b * 255.0f, c.a * 255.0f);
-
-
 
 				if (shape == "line")
 				{
@@ -191,7 +194,36 @@ void LaserShapeSequence::draw()
 				s.position.x = getParameter<float>("Pos x");
 				s.position.y = getParameter<float>("Pos y");
 
-				l->addShapeToCurrentFrame(s);
+
+				if (doFlashPoints)
+				{
+					auto path = s.path.getOutline()[0];
+
+					for (auto &p : _flashPoints)
+					{
+						auto s2 = s;
+						s2.path.clear();
+
+						auto point = path.getPointAtPercent(p.rat);
+
+						s2.addPoint(point);
+
+						if (decayType == "flash")
+						{
+							s2.color.a = p.alpha > 0.5f ? 255 : 0;
+						}
+						else
+						{
+							s2.color.a = p.alpha * 255;
+						}
+
+						l->addShapeToCurrentFrame(s2);
+					}
+				}
+				else
+				{
+					l->addShapeToCurrentFrame(s);
+				}
 
 				
 			}
@@ -209,20 +241,47 @@ void LaserShapeSequence::draw(ofxVoid::setlist::SequenceSurface surface)
 
 #pragma mark - Protected methods
 
+void LaserShapeSequence::_addFlashPoint()
+{
+	FlashPoint p;
+	p.rat = ofRandom(1.0);
+	p.alpha = 1.0;
+
+	_flashPoints.push_back(p);
+}
+
 void LaserShapeSequence::_onNoteTrigger(ofxMidiMessage & msg)
 {
-  if (msg.status == MIDI_NOTE_ON)
-  {
-    _values[0] = 1.0f;
-  }
+	if (getParameter<bool>("flash points"))
+	{
+		_addFlashPoint();
+	}
+	else if (msg.status == MIDI_NOTE_ON)
+	{
+		_values[0] = 1.0f;
+	}
 }
 
 void LaserShapeSequence::_onBeatTrigger()
 {
-  _values[0] = 1.0f;
+	if (getParameter<bool>("flash points"))
+	{
+		_addFlashPoint();
+	}
+	else
+	{
+		_values[0] = 1.0f;
+	}
 }
 
 void LaserShapeSequence::_onRunTrigger(int position)
 {
-  _values[0] = 1.0f;
+	if (getParameter<bool>("flash points"))
+	{
+		_addFlashPoint();
+	}
+	else
+	{
+		_values[0] = 1.0f;
+	}
 }
