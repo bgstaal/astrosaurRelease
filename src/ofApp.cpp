@@ -5,6 +5,7 @@
 #include "sequences/AudioWaveSequence.h"
 #include "sequences/RainSequence.h"
 #include "sequences/LaserShapeSequence.h"
+#include "sequences/NavigatorSequence.h"
 
 #pragma mark - Public methods
 
@@ -30,6 +31,7 @@ void ofApp::setup()
 
   _midiManager = make_shared<ofxVoid::midi::MidiManager>();
   _midiManager->setup();
+  _midiManager->addListener(this);
 
   _metronome = make_shared<ofxVoid::midi::Metronome>();
   _metronome->enableMidiClock(_midiManager);
@@ -45,6 +47,7 @@ void ofApp::setup()
   factories.push_back(make_shared<AudioWaveSequenceFactory>());
   factories.push_back(make_shared<RainSequenceFactory>());
   factories.push_back(make_shared<LaserShapeSequenceFactory>());
+  factories.push_back(make_shared<NavigatorSequenceFactory>());
   
   // Add factories here
   
@@ -160,6 +163,20 @@ void ofApp::keyReleased(int key)
 void ofApp::windowResized(int w, int h)
 {
   _ui->setSize(ofVec2f(w, h));
+}
+
+void ofApp::onMidiMessage(ofxMidiMessage& msg)
+{
+    if (msg.status == MIDI_CONTROL_CHANGE)
+    {
+        if (msg.channel == 10 && msg.control == 3)
+        {
+            float b = ofMap(msg.value, 0, 127, 0, 1);
+            ofLog() << "set brighntess: " << b;
+            _laserController->parameters.get<float>("brightness").set(b);
+        }
+        
+   }
 }
 
 

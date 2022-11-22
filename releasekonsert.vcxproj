@@ -185,6 +185,7 @@
     <ClCompile Include="src\LaserController.cpp" />
     <ClCompile Include="src\sequences\AudioWaveSequence.cpp" />
     <ClCompile Include="src\sequences\LaserShapeSequence.cpp" />
+    <ClCompile Include="src\sequences\NavigatorSequence.cpp" />
     <ClCompile Include="src\sequences\NetworkSequence.cpp" />
     <ClCompile Include="src\sequences\RainSequence.cpp" />
     <ClCompile Include="src\sequences\TestSequence.cpp" />
@@ -271,6 +272,7 @@
     <ClInclude Include="src\LaserController.h" />
     <ClInclude Include="src\sequences\AudioWaveSequence.h" />
     <ClInclude Include="src\sequences\LaserShapeSequence.h" />
+    <ClInclude Include="src\sequences\NavigatorSequence.h" />
     <ClInclude Include="src\sequences\NetworkSequence.h" />
     <ClInclude Include="src\sequences\RainSequence.h" />
     <ClInclude Include="src\sequences\TestSequence.h" />

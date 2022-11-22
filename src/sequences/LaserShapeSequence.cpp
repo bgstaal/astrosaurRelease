@@ -8,14 +8,17 @@ void LaserShapeSequence::start(float time)
 {
 	TriggerSequence::start(time);
   
-  _shapes.push_back(LaserShape());
-  _rotations.push_back(0);
+	_shapes.push_back(LaserShape());
+	_rotations.push_back(0);
 	_values.resize(1);
 }
 
 void LaserShapeSequence::stop()
 {
-  TriggerSequence::stop();
+	//TriggerSequence::stop();
+	Sequence::stop();
+	getResources()->midi->removeListener(this);
+	Sequence::stopped();
 }
 
 void LaserShapeSequence::update(float time, float timeStep)
@@ -25,7 +28,6 @@ void LaserShapeSequence::update(float time, float timeStep)
 	int j = 0;
 	for (int i = 0; i < _shapes.size(); i++)
 	{
-
 		float speed = parameters.get<float>("rotational velocity");
 
 		float vel = speed * timeStep;
@@ -64,6 +66,12 @@ void LaserShapeSequence::update(float time, float timeStep)
 			i--;
 		}
 	}
+
+	sort(_flashPoints.begin(), _flashPoints.end(),
+	[](const FlashPoint& a, const FlashPoint& b) -> bool
+	{
+		return a.rat < b.rat;
+	});
 }
 
 void LaserShapeSequence::draw()
@@ -252,13 +260,16 @@ void LaserShapeSequence::_addFlashPoint()
 
 void LaserShapeSequence::_onNoteTrigger(ofxMidiMessage & msg)
 {
-	if (getParameter<bool>("flash points"))
+	if (msg.status == MIDI_NOTE_ON)
 	{
-		_addFlashPoint();
-	}
-	else if (msg.status == MIDI_NOTE_ON)
-	{
-		_values[0] = 1.0f;
+		if (getParameter<bool>("flash points"))
+		{
+			_addFlashPoint();
+		}
+		else
+		{
+			_values[0] = 1.0f;
+		}
 	}
 }
 

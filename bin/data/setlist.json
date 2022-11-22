@@ -2,9 +2,7 @@
     "setlist": {
         "sets": [
             "sets/pyramidsong.json",
-            "sets/hyttegata.json",
-            "sets/skog.json",
-            "sets/test.json"
+            "sets/concert-test.json"
         ]
     }
 }

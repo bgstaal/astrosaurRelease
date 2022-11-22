@@ -16,7 +16,7 @@
 #include "ofxVoid/midi/Metronome.h"
 
 
-class ofApp : public ofBaseApp
+class ofApp : public ofBaseApp, ofxVoid::midi::MidiManagerListener
 {
   
 public:
@@ -29,6 +29,8 @@ public:
   void keyPressed(int key);
   void keyReleased(int key);
   void windowResized(int w, int h);
+
+  void onMidiMessage(ofxMidiMessage& msg);
   
   
 private:

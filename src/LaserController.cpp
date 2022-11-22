@@ -111,8 +111,8 @@ void LaserController::setup(float height)
   _lasers.push_back(laser);
 
 #ifdef TARGET_WIN32
-  int zoneIndex = inds[4].first;
-  int projectorIndex = inds[4].second;
+  int zoneIndex = inds[3].first;
+  int projectorIndex = inds[3].second;
 
   auto zone = make_shared<BeyondZone>();
   zone->setup(_beyond, "zone" + ofToString(zoneIndex), zoneIndex, projectorIndex);

@@ -55,7 +55,7 @@ public:
 		ofParameterGroup parameters = TriggerSequenceFactory<LaserShapeSequence>::getParameters();
 
 		auto time = parameters.getGroup("Transition").get<float>("Time");
-		time.setMax(60.0f);
+		time.setMax(120.0f);
 		
 
 		auto res = static_pointer_cast<Resources>(resources);
