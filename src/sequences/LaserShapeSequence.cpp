@@ -42,6 +42,7 @@ void LaserShapeSequence::update(float time, float timeStep)
 		s.setClip(from, to);
 		float rot = parameters.get<float>("rotation");
 
+
 		s.rotation = rot + _rotations[i];
 
 		j++;
@@ -134,6 +135,7 @@ void LaserShapeSequence::draw()
 
 				if (doFlashPoints) drawIt = true;
 			}
+
 
 			if (getParameter<bool>("invisible when small") && size <= LaserShape::minPointSize)
 			{
@@ -230,7 +232,16 @@ void LaserShapeSequence::draw()
 				}
 				else
 				{
-					l->addShapeToCurrentFrame(s);
+					if (getParameter<bool>("invisible when small") && s.getClipTo() - s.getClipFrom() <= 0.0f)
+					{
+						// nothing
+					}
+					else
+					{
+						l->addShapeToCurrentFrame(s);
+					}
+
+					
 				}
 
 				

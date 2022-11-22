@@ -13,7 +13,7 @@
 void ofApp::setup()
 {
   ofLogToConsole();
-  ofxVoid::ui::init(2.0f);
+  ofxVoid::ui::init(1.0f);
   Tweenzor::init();
   
   _time = ofGetElapsedTimef();

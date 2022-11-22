@@ -36,6 +36,75 @@
                             }
                         },
                         "sequenceFactoryIndex": 0
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "0, 0, 0, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass dot",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "1",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "3"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.742292",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0.110417",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "0"
+                            }
+                        },
+                        "sequenceFactoryIndex": 1
                     }
                 ],
                 "name": ""
@@ -105,8 +174,8 @@
                                 "Pos_x": "0.5",
                                 "Pos_y": "0.5",
                                 "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "0"
+                                    "Easing": "In Out Quad",
+                                    "Time": "6"
                                 },
                                 "audio_reactive": {
                                     "desaturation_ratio": "0",
@@ -174,8 +243,8 @@
                                 "Pos_x": "0.5",
                                 "Pos_y": "0.5",
                                 "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "0"
+                                    "Easing": "In Out Quad",
+                                    "Time": "6"
                                 },
                                 "audio_reactive": {
                                     "desaturation_ratio": "0",
@@ -280,7 +349,7 @@
                                 "circle_res": "100",
                                 "clip_from": "0",
                                 "clip_to": "1",
-                                "decay": "0.742292",
+                                "decay": "0.901792",
                                 "decay_type": "fade",
                                 "flash_points": "0",
                                 "invisible_when_small": "0",
@@ -317,7 +386,7 @@
                                     "Enable_Mask": "0",
                                     "Invert_Mask": "0"
                                 },
-                                "Label": "guitar line",
+                                "Label": "bass line",
                                 "Midi": {
                                     "Control_Channel": "-1",
                                     "Control_Key": "-1",
@@ -349,7 +418,7 @@
                                 "circle_res": "100",
                                 "clip_from": "0",
                                 "clip_to": "1",
-                                "decay": "0.742292",
+                                "decay": "0.901792",
                                 "decay_type": "fade",
                                 "flash_points": "0",
                                 "invisible_when_small": "0",
@@ -363,7 +432,6 @@
                         },
                         "sequenceFactoryIndex": 2
                     },
-                    null,
                     {
                         "parameters": {
                             "group": {
@@ -373,7 +441,76 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "24"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0.5",
+                                "clip_to": "0.5",
+                                "decay": "0.902396",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "1",
+                                "max_alpha": "1",
+                                "min_alpha": "0.110417",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 3
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -422,7 +559,7 @@
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
-                                "invisible_when_small": "0",
+                                "invisible_when_small": "1",
                                 "max_alpha": "1",
                                 "min_alpha": "0",
                                 "rotation": "-135",
@@ -674,7 +811,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -743,7 +880,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -792,7 +929,7 @@
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
-                                "invisible_when_small": "0",
+                                "invisible_when_small": "1",
                                 "max_alpha": "1",
                                 "min_alpha": "0",
                                 "rotation": "-135",
@@ -837,7 +974,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.483051, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -906,7 +1043,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.470339, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -975,7 +1112,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.483051, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1044,7 +1181,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1113,7 +1250,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -1182,7 +1319,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1276,7 +1413,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.483051, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1345,7 +1482,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.470339, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -1414,7 +1551,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.483051, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1483,7 +1620,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1534,7 +1671,7 @@
                                 "flash_points": "0",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
-                                "min_alpha": "0",
+                                "min_alpha": "1",
                                 "rotation": "-135",
                                 "rotational_velocity": "0",
                                 "shape": "line",
@@ -1552,7 +1689,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 0.54661, 0, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -1621,7 +1758,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "0, 1, 0.364407, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1665,12 +1802,12 @@
                                     "min_size": "0"
                                 },
                                 "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
+                                "clip_from": "0.0001",
+                                "clip_to": "0.9999",
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
-                                "invisible_when_small": "0",
+                                "invisible_when_small": "1",
                                 "max_alpha": "1",
                                 "min_alpha": "0",
                                 "rotation": "0",
@@ -1690,7 +1827,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -1739,7 +1876,7 @@
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
-                                "invisible_when_small": "0",
+                                "invisible_when_small": "1",
                                 "max_alpha": "1",
                                 "min_alpha": "0",
                                 "rotation": "225",
@@ -1784,7 +1921,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.254237, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1809,7 +1946,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -1853,7 +1990,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.254237, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -1878,7 +2015,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -1922,7 +2059,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.228814, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -1947,7 +2084,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -1991,7 +2128,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.254237, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -2060,7 +2197,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.254237, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -2129,7 +2266,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.254237, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "0",
@@ -2173,8 +2310,8 @@
                                     "min_size": "0"
                                 },
                                 "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
+                                "clip_from": "0.0001",
+                                "clip_to": "0.9999",
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
@@ -2198,7 +2335,7 @@
                                     "Nth_quad_beat": "4",
                                     "Offset_beat": "0"
                                 },
-                                "Color": "1, 1, 1, 1",
+                                "Color": "1, 0.152542, 0, 1",
                                 "Disable": "0",
                                 "Draw_to_laser": {
                                     "Laser_0": "1",
@@ -2346,7 +2483,7 @@
                                 "clip_from": "0",
                                 "clip_to": "1",
                                 "decay": "0.9",
-                                "decay_type": "fade",
+                                "decay_type": "flash",
                                 "flash_points": "1",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
@@ -2440,7 +2577,7 @@
                                 "clip_from": "0",
                                 "clip_to": "1",
                                 "decay": "0.742292",
-                                "decay_type": "fade",
+                                "decay_type": "flash",
                                 "flash_points": "1",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
@@ -2509,8 +2646,449 @@
                                 "clip_from": "0",
                                 "clip_to": "1",
                                 "decay": "0.742292",
-                                "decay_type": "fade",
+                                "decay_type": "flash",
                                 "flash_points": "1",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0.110417",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 2
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "34"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.742292",
+                                "decay_type": "flash",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0.110417",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 3
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line 2",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "0",
+                                    "Note_Channel": "-1",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "1",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-135",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "0"
+                            }
+                        },
+                        "sequenceFactoryIndex": 4
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass + guitar line 2",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "0",
+                                    "Note_Channel": "-1",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "1",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-135",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "0"
+                            }
+                        },
+                        "sequenceFactoryIndex": 5
+                    },
+                    null,
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "flashing dots plane",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "4",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "24"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "flash",
+                                "flash_points": "1",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "0",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1"
+                            }
+                        },
+                        "sequenceFactoryIndex": 8
+                    }
+                ],
+                "name": "buildup"
+            },
+            {
+                "duration": 30.0,
+                "entries": [
+                    {
+                        "parameters": {
+                            "group": {
+                                "Disable": "0",
+                                "Disable_Midi": "0",
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1"
+                                },
+                                "Label": "",
+                                "Note_Channel": "16",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                }
+                            }
+                        },
+                        "sequenceFactoryIndex": 0
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "34"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.742292",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0.110417",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 1
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "guitar line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "34"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.742292",
+                                "decay_type": "fade",
+                                "flash_points": "0",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
                                 "min_alpha": "0.110417",
@@ -2634,449 +3212,8 @@
                                 "Pos_x": "0.5",
                                 "Pos_y": "0.5",
                                 "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "0"
-                                },
-                                "audio_reactive": {
-                                    "desaturation_ratio": "0",
-                                    "enabled": "0",
-                                    "max_size": "1",
-                                    "min_size": "0"
-                                },
-                                "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
-                                "decay": "0.9",
-                                "decay_type": "fade",
-                                "flash_points": "0",
-                                "invisible_when_small": "0",
-                                "max_alpha": "1",
-                                "min_alpha": "0",
-                                "rotation": "-135",
-                                "rotational_velocity": "0",
-                                "shape": "line",
-                                "size": "0"
-                            }
-                        },
-                        "sequenceFactoryIndex": 4
-                    },
-                    {
-                        "parameters": {
-                            "group": {
-                                "Beat": {
-                                    "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
-                                    "Nth_quad_beat": "4",
-                                    "Offset_beat": "0"
-                                },
-                                "Color": "1, 1, 1, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "1",
-                                    "Laser_1": "0",
-                                    "Laser_2": "1",
-                                    "Laser_3": "0"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "bass + guitar line 2",
-                                "Midi": {
-                                    "Control_Channel": "-1",
-                                    "Control_Key": "-1",
-                                    "Enable_Control": "0",
-                                    "Enable_Pitch": "0",
-                                    "Pitch_Channel": "-1",
-                                    "Pitch_Key": "-1"
-                                },
-                                "Note": {
-                                    "Enable_Note": "0",
-                                    "Note_Channel": "-1",
-                                    "Note_Columns": "All",
-                                    "Run_Length": "4",
-                                    "Run_Nth_Quad": "4",
-                                    "Sustain": "0"
-                                },
-                                "Pos_x": "0.5",
-                                "Pos_y": "0.5",
-                                "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "0"
-                                },
-                                "audio_reactive": {
-                                    "desaturation_ratio": "0",
-                                    "enabled": "0",
-                                    "max_size": "1",
-                                    "min_size": "0"
-                                },
-                                "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
-                                "decay": "0.9",
-                                "decay_type": "fade",
-                                "flash_points": "0",
-                                "invisible_when_small": "0",
-                                "max_alpha": "1",
-                                "min_alpha": "0",
-                                "rotation": "-135",
-                                "rotational_velocity": "0",
-                                "shape": "line",
-                                "size": "0"
-                            }
-                        },
-                        "sequenceFactoryIndex": 5
-                    },
-                    null,
-                    null,
-                    {
-                        "parameters": {
-                            "group": {
-                                "Beat": {
-                                    "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
-                                    "Nth_quad_beat": "4",
-                                    "Offset_beat": "0"
-                                },
-                                "Color": "1, 1, 1, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "0",
-                                    "Laser_1": "0",
-                                    "Laser_2": "0",
-                                    "Laser_3": "1"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "flashing dots plane",
-                                "Midi": {
-                                    "Control_Channel": "-1",
-                                    "Control_Key": "-1",
-                                    "Enable_Control": "0",
-                                    "Enable_Pitch": "0",
-                                    "Pitch_Channel": "-1",
-                                    "Pitch_Key": "-1"
-                                },
-                                "Note": {
-                                    "Enable_Note": "1",
-                                    "Note_Channel": "4",
-                                    "Note_Columns": "All",
-                                    "Run_Length": "4",
-                                    "Run_Nth_Quad": "4",
-                                    "Sustain": "0"
-                                },
-                                "Pos_x": "0.5",
-                                "Pos_y": "0",
-                                "Transition": {
                                     "Easing": "Out Quad",
-                                    "Time": "24"
-                                },
-                                "audio_reactive": {
-                                    "desaturation_ratio": "0",
-                                    "enabled": "0",
-                                    "max_size": "1",
-                                    "min_size": "0"
-                                },
-                                "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
-                                "decay": "0.9",
-                                "decay_type": "fade",
-                                "flash_points": "1",
-                                "invisible_when_small": "0",
-                                "max_alpha": "1",
-                                "min_alpha": "0",
-                                "rotation": "0",
-                                "rotational_velocity": "0",
-                                "shape": "line",
-                                "size": "1"
-                            }
-                        },
-                        "sequenceFactoryIndex": 8
-                    }
-                ],
-                "name": "buildup"
-            },
-            {
-                "duration": 30.0,
-                "entries": [
-                    {
-                        "parameters": {
-                            "group": {
-                                "Disable": "0",
-                                "Disable_Midi": "0",
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1"
-                                },
-                                "Label": "",
-                                "Note_Channel": "16",
-                                "Transition": {
-                                    "Easing": "Out Quad",
-                                    "Time": "0"
-                                }
-                            }
-                        },
-                        "sequenceFactoryIndex": 0
-                    },
-                    {
-                        "parameters": {
-                            "group": {
-                                "Beat": {
-                                    "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
-                                    "Nth_quad_beat": "4",
-                                    "Offset_beat": "0"
-                                },
-                                "Color": "1, 1, 1, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "0",
-                                    "Laser_1": "0",
-                                    "Laser_2": "1",
-                                    "Laser_3": "0"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "bass line",
-                                "Midi": {
-                                    "Control_Channel": "-1",
-                                    "Control_Key": "-1",
-                                    "Enable_Control": "0",
-                                    "Enable_Pitch": "0",
-                                    "Pitch_Channel": "-1",
-                                    "Pitch_Key": "-1"
-                                },
-                                "Note": {
-                                    "Enable_Note": "1",
-                                    "Note_Channel": "-1",
-                                    "Note_Columns": "All",
-                                    "Run_Length": "4",
-                                    "Run_Nth_Quad": "4",
-                                    "Sustain": "0"
-                                },
-                                "Pos_x": "0.5",
-                                "Pos_y": "0.5",
-                                "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "34"
-                                },
-                                "audio_reactive": {
-                                    "desaturation_ratio": "0",
-                                    "enabled": "0",
-                                    "max_size": "1",
-                                    "min_size": "0"
-                                },
-                                "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
-                                "decay": "0.742292",
-                                "decay_type": "fade",
-                                "flash_points": "0",
-                                "invisible_when_small": "0",
-                                "max_alpha": "1",
-                                "min_alpha": "0.110417",
-                                "rotation": "-45",
-                                "rotational_velocity": "0",
-                                "shape": "line",
-                                "size": "1.41667"
-                            }
-                        },
-                        "sequenceFactoryIndex": 1
-                    },
-                    {
-                        "parameters": {
-                            "group": {
-                                "Beat": {
-                                    "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
-                                    "Nth_quad_beat": "4",
-                                    "Offset_beat": "0"
-                                },
-                                "Color": "1, 1, 1, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "1",
-                                    "Laser_1": "0",
-                                    "Laser_2": "0",
-                                    "Laser_3": "0"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "guitar line",
-                                "Midi": {
-                                    "Control_Channel": "-1",
-                                    "Control_Key": "-1",
-                                    "Enable_Control": "0",
-                                    "Enable_Pitch": "0",
-                                    "Pitch_Channel": "-1",
-                                    "Pitch_Key": "-1"
-                                },
-                                "Note": {
-                                    "Enable_Note": "1",
-                                    "Note_Channel": "-1",
-                                    "Note_Columns": "All",
-                                    "Run_Length": "4",
-                                    "Run_Nth_Quad": "4",
-                                    "Sustain": "0"
-                                },
-                                "Pos_x": "0.5",
-                                "Pos_y": "0.5",
-                                "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "34"
-                                },
-                                "audio_reactive": {
-                                    "desaturation_ratio": "0",
-                                    "enabled": "0",
-                                    "max_size": "1",
-                                    "min_size": "0"
-                                },
-                                "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
-                                "decay": "0.742292",
-                                "decay_type": "fade",
-                                "flash_points": "0",
-                                "invisible_when_small": "0",
-                                "max_alpha": "1",
-                                "min_alpha": "0.110417",
-                                "rotation": "-45",
-                                "rotational_velocity": "0",
-                                "shape": "line",
-                                "size": "1.41667"
-                            }
-                        },
-                        "sequenceFactoryIndex": 2
-                    },
-                    {
-                        "parameters": {
-                            "group": {
-                                "Beat": {
-                                    "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
-                                    "Nth_quad_beat": "4",
-                                    "Offset_beat": "0"
-                                },
-                                "Color": "1, 1, 1, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "0",
-                                    "Laser_1": "1",
-                                    "Laser_2": "0",
-                                    "Laser_3": "0"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "drums line",
-                                "Midi": {
-                                    "Control_Channel": "-1",
-                                    "Control_Key": "-1",
-                                    "Enable_Control": "0",
-                                    "Enable_Pitch": "0",
-                                    "Pitch_Channel": "-1",
-                                    "Pitch_Key": "-1"
-                                },
-                                "Note": {
-                                    "Enable_Note": "1",
-                                    "Note_Channel": "-1",
-                                    "Note_Columns": "All",
-                                    "Run_Length": "4",
-                                    "Run_Nth_Quad": "4",
-                                    "Sustain": "0"
-                                },
-                                "Pos_x": "0.5",
-                                "Pos_y": "0.5",
-                                "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "34"
-                                },
-                                "audio_reactive": {
-                                    "desaturation_ratio": "0",
-                                    "enabled": "0",
-                                    "max_size": "1",
-                                    "min_size": "0"
-                                },
-                                "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
-                                "decay": "0.742292",
-                                "decay_type": "fade",
-                                "flash_points": "0",
-                                "invisible_when_small": "0",
-                                "max_alpha": "1",
-                                "min_alpha": "0.110417",
-                                "rotation": "-45",
-                                "rotational_velocity": "0",
-                                "shape": "line",
-                                "size": "1.41667"
-                            }
-                        },
-                        "sequenceFactoryIndex": 3
-                    },
-                    {
-                        "parameters": {
-                            "group": {
-                                "Beat": {
-                                    "Beat_Columns": "All",
-                                    "Enable_Beat": "0",
-                                    "Nth_quad_beat": "4",
-                                    "Offset_beat": "0"
-                                },
-                                "Color": "1, 1, 1, 1",
-                                "Disable": "0",
-                                "Draw_to_laser": {
-                                    "Laser_0": "0",
-                                    "Laser_1": "1",
-                                    "Laser_2": "0",
-                                    "Laser_3": "0"
-                                },
-                                "Effect": {
-                                    "Blend_Mode": "Alpha",
-                                    "Effect_Count": "1",
-                                    "Enable_Mask": "0",
-                                    "Invert_Mask": "0"
-                                },
-                                "Label": "drums line 2",
-                                "Midi": {
-                                    "Control_Channel": "-1",
-                                    "Control_Key": "-1",
-                                    "Enable_Control": "0",
-                                    "Enable_Pitch": "0",
-                                    "Pitch_Channel": "-1",
-                                    "Pitch_Key": "-1"
-                                },
-                                "Note": {
-                                    "Enable_Note": "0",
-                                    "Note_Channel": "-1",
-                                    "Note_Columns": "All",
-                                    "Run_Length": "4",
-                                    "Run_Nth_Quad": "4",
-                                    "Sustain": "0"
-                                },
-                                "Pos_x": "0.5",
-                                "Pos_y": "0.5",
-                                "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "34"
+                                    "Time": "20"
                                 },
                                 "audio_reactive": {
                                     "desaturation_ratio": "0",
@@ -3144,8 +3281,8 @@
                                 "Pos_x": "0.5",
                                 "Pos_y": "0.5",
                                 "Transition": {
-                                    "Easing": "In Out Quad",
-                                    "Time": "34"
+                                    "Easing": "Out Quad",
+                                    "Time": "21"
                                 },
                                 "audio_reactive": {
                                     "desaturation_ratio": "0",
@@ -3229,7 +3366,7 @@
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
-                                "invisible_when_small": "0",
+                                "invisible_when_small": "1",
                                 "max_alpha": "1",
                                 "min_alpha": "0",
                                 "rotation": "225",
@@ -3274,7 +3411,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "4",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -3296,7 +3433,7 @@
                                 "clip_from": "0",
                                 "clip_to": "1",
                                 "decay": "0.9",
-                                "decay_type": "fade",
+                                "decay_type": "flash",
                                 "flash_points": "1",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
@@ -3368,7 +3505,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -3394,7 +3531,7 @@
                                 "flash_points": "0",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
-                                "min_alpha": "0.110417",
+                                "min_alpha": "1",
                                 "rotation": "-45",
                                 "rotational_velocity": "0",
                                 "shape": "line",
@@ -3437,7 +3574,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -3463,7 +3600,7 @@
                                 "flash_points": "0",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
-                                "min_alpha": "0.110417",
+                                "min_alpha": "1",
                                 "rotation": "-45",
                                 "rotational_velocity": "0",
                                 "shape": "line",
@@ -3506,7 +3643,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -3532,7 +3669,7 @@
                                 "flash_points": "0",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
-                                "min_alpha": "0.110417",
+                                "min_alpha": "1",
                                 "rotation": "-45",
                                 "rotational_velocity": "0",
                                 "shape": "line",
@@ -3584,7 +3721,7 @@
                                 "Pos_x": "0.5",
                                 "Pos_y": "0.5",
                                 "Transition": {
-                                    "Easing": "In Out Quad",
+                                    "Easing": "Out Quad",
                                     "Time": "34"
                                 },
                                 "audio_reactive": {
@@ -3851,7 +3988,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "4",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -3873,7 +4010,7 @@
                                 "clip_from": "0",
                                 "clip_to": "1",
                                 "decay": "0.9",
-                                "decay_type": "fade",
+                                "decay_type": "flash",
                                 "flash_points": "1",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
@@ -4014,7 +4151,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -4083,7 +4220,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -4152,7 +4289,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "3",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -4378,8 +4515,8 @@
                                     "min_size": "0"
                                 },
                                 "circle_res": "100",
-                                "clip_from": "0",
-                                "clip_to": "1",
+                                "clip_from": "0.0001",
+                                "clip_to": "0.9999",
                                 "decay": "0.9",
                                 "decay_type": "fade",
                                 "flash_points": "0",
@@ -4497,7 +4634,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "-1",
+                                    "Note_Channel": "4",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",
@@ -4519,7 +4656,7 @@
                                 "clip_from": "0",
                                 "clip_to": "1",
                                 "decay": "0.9",
-                                "decay_type": "fade",
+                                "decay_type": "flash",
                                 "flash_points": "1",
                                 "invisible_when_small": "0",
                                 "max_alpha": "1",
@@ -4625,8 +4762,1246 @@
                             }
                         },
                         "sequenceFactoryIndex": 0
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.950125",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 1
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "guitar line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.950125",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 2
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.950125",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 3
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line 2",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-135",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 4
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass + guitar line 2",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-135",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 5
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0.0001",
+                                "clip_to": "0.9999",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "0",
+                                "rotational_velocity": "0",
+                                "shape": "rect",
+                                "size": "0.783333"
+                            }
+                        },
+                        "sequenceFactoryIndex": 6
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass + guitar circle",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "225",
+                                "rotational_velocity": "0",
+                                "shape": "circle",
+                                "size": "0.6"
+                            }
+                        },
+                        "sequenceFactoryIndex": 7
+                    },
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "plane",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "0",
+                                    "Note_Channel": "-1",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "28"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "1",
+                                "rotation": "0",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1"
+                            }
+                        },
+                        "sequenceFactoryIndex": 9
                     }
                 ],
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": [
+                    {
+                        "parameters": {
+                            "group": {
+                                "Disable": "0",
+                                "Disable_Midi": "0",
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1"
+                                },
+                                "Label": "",
+                                "Note_Channel": "16",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                }
+                            }
+                        },
+                        "sequenceFactoryIndex": 0
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.980333",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 1
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "guitar line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.980333",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 2
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.980333",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-45",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 3
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "drums line 2",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.980333",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-135",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 4
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass + guitar line 2",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.980333",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "-135",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "1.41667"
+                            }
+                        },
+                        "sequenceFactoryIndex": 5
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "1",
+                                    "Laser_2": "0",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0.0001",
+                                "clip_to": "0.9999",
+                                "decay": "0.980333",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "0",
+                                "rotational_velocity": "0",
+                                "shape": "rect",
+                                "size": "0.783333"
+                            }
+                        },
+                        "sequenceFactoryIndex": 6
+                    },
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "1",
+                                    "Laser_1": "0",
+                                    "Laser_2": "1",
+                                    "Laser_3": "0"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "bass + guitar circle",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "3",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0.5",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "0"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "225",
+                                "rotational_velocity": "0",
+                                "shape": "circle",
+                                "size": "0.6"
+                            }
+                        },
+                        "sequenceFactoryIndex": 7
+                    },
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "plane",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "4",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "12"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.9",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "1",
+                                "min_alpha": "0",
+                                "rotation": "0",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "0"
+                            }
+                        },
+                        "sequenceFactoryIndex": 9
+                    }
+                ],
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": [
+                    {
+                        "parameters": {
+                            "group": {
+                                "Disable": "0",
+                                "Disable_Midi": "0",
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1"
+                                },
+                                "Label": "",
+                                "Note_Channel": "16",
+                                "Transition": {
+                                    "Easing": "Out Quad",
+                                    "Time": "0"
+                                }
+                            }
+                        },
+                        "sequenceFactoryIndex": 0
+                    },
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    {
+                        "parameters": {
+                            "group": {
+                                "Beat": {
+                                    "Beat_Columns": "All",
+                                    "Enable_Beat": "0",
+                                    "Nth_quad_beat": "4",
+                                    "Offset_beat": "0"
+                                },
+                                "Color": "1, 1, 1, 1",
+                                "Disable": "0",
+                                "Draw_to_laser": {
+                                    "Laser_0": "0",
+                                    "Laser_1": "0",
+                                    "Laser_2": "0",
+                                    "Laser_3": "1"
+                                },
+                                "Effect": {
+                                    "Blend_Mode": "Alpha",
+                                    "Effect_Count": "1",
+                                    "Enable_Mask": "0",
+                                    "Invert_Mask": "0"
+                                },
+                                "Label": "plane",
+                                "Midi": {
+                                    "Control_Channel": "-1",
+                                    "Control_Key": "-1",
+                                    "Enable_Control": "0",
+                                    "Enable_Pitch": "0",
+                                    "Pitch_Channel": "-1",
+                                    "Pitch_Key": "-1"
+                                },
+                                "Note": {
+                                    "Enable_Note": "1",
+                                    "Note_Channel": "4",
+                                    "Note_Columns": "All",
+                                    "Run_Length": "4",
+                                    "Run_Nth_Quad": "4",
+                                    "Sustain": "0"
+                                },
+                                "Pos_x": "0.5",
+                                "Pos_y": "0",
+                                "Transition": {
+                                    "Easing": "In Out Quad",
+                                    "Time": "8"
+                                },
+                                "audio_reactive": {
+                                    "desaturation_ratio": "0",
+                                    "enabled": "0",
+                                    "max_size": "1",
+                                    "min_size": "0"
+                                },
+                                "circle_res": "100",
+                                "clip_from": "0",
+                                "clip_to": "1",
+                                "decay": "0.7",
+                                "decay_type": "fade",
+                                "flash_points": "0",
+                                "invisible_when_small": "0",
+                                "max_alpha": "0",
+                                "min_alpha": "0",
+                                "rotation": "0",
+                                "rotational_velocity": "0",
+                                "shape": "line",
+                                "size": "0"
+                            }
+                        },
+                        "sequenceFactoryIndex": 9
+                    }
+                ],
+                "name": ""
+            },
+            {
+                "duration": 30.0,
+                "entries": null,
                 "name": ""
             }
         ]
