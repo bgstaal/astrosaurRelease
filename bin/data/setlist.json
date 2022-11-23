@@ -1,8 +1,8 @@
 {
     "setlist": {
-        "sets": [
-            "sets/pyramidsong.json",
-            "sets/concert-test.json"
-        ]
+      "sets": [
+        "sets/pyramidsong.json",
+        "sets/test-setup.json"
+      ]
     }
 }

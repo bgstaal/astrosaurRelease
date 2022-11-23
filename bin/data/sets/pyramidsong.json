@@ -5074,7 +5074,7 @@
                                 },
                                 "Note": {
                                     "Enable_Note": "1",
-                                    "Note_Channel": "3",
+                                    "Note_Channel": "5",
                                     "Note_Columns": "All",
                                     "Run_Length": "4",
                                     "Run_Nth_Quad": "4",

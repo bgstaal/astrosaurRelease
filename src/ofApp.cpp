@@ -100,6 +100,8 @@ void ofApp::setup()
   _ui->disableAutoDraw();
   
   windowResized(ofGetWidth(), ofGetHeight());
+
+  _setlist->setPosition(0, 0);
 }
 
 //--------------------------------------------------------------
